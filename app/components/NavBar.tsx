@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import lightLogo from "../../public/light-nobr-logo.svg";
 import darkLogo from "../../public/dark-nobr-logo.svg";
-import menu from "../../public/menu.svg"
+import menu from "../../public/menu.svg";
 import { ModeToggle } from "./ModeToggle";
 import { Linkedin } from "./logos/Linkedin";
 import { Twitter } from "./logos/Twitter";
@@ -12,11 +12,14 @@ function NavBar() {
     <header className="sticky p-2 top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <nav className="p-2 container mx-auto flex justify-between items-center font-medium text-sm">
         <div className="flex items-center space-x-8">
-          <Link href="/">
+          <Link href="/" prefetch={true}>
             <Image
               src={lightLogo}
               alt="nobr logo"
               className="ml-2 dark:hidden"
+              quality={100}
+              placeholder="blur"
+              loading="eager"
             />
             <Image
               src={darkLogo}
