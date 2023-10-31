@@ -1,0 +1,28 @@
+import Link from "next/link";
+
+function Footer() {
+  return (
+    <footer className="p-2 text-xs">
+      <nav className="p-2 container mx-auto flex flex-col-reverse sm:flex-row justify-between md:items-center gap-2">
+        <section>
+          <p>
+            &copy;2023 <span className="text-orange-500">nobr</span>. All rights
+            reserved
+          </p>
+        </section>
+        <section>
+          <ul className="flex items-center divide-x-[1px] divide-slate-900">
+            <Link href="/" className="mr-2 hover:text-slate-900/50">
+              Terms & Conditions
+            </Link>
+            <Link href="/" className="pl-2 hover:text-slate-900/50">
+              <p>Privacy Policy</p>
+            </Link>
+          </ul>
+        </section>
+      </nav>
+    </footer>
+  );
+}
+
+export default Footer;
