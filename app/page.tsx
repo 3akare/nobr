@@ -5,7 +5,7 @@ import NewsLetter from "./components/NewsLetter";
 
 export default function Home() {
   return (
-    <main className="space-y-8">
+    <main className="space-y-20">
       <HeroSection />
       <Features />
       <NewsLetter />

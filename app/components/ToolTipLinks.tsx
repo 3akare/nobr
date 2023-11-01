@@ -14,7 +14,7 @@ function ToolTipLinks() {
         <Tooltip>
           <TooltipTrigger>
             <Link href="/">
-              <ChatIcon className="w-5 h-5" />
+              <ChatIcon className="w-6 h-6" />
             </Link>
           </TooltipTrigger>
           <TooltipContent>
@@ -26,7 +26,7 @@ function ToolTipLinks() {
         <Tooltip>
           <TooltipTrigger>
             <Link href="/">
-              <VideoIcon className="w-6 h-6" />
+              <VideoIcon className="w-8 h-8" />
             </Link>
           </TooltipTrigger>
           <TooltipContent>
