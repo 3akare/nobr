@@ -8,7 +8,7 @@ export default function Home() {
     <main className="space-y-20">
       <HeroSection />
       <Features />
-      <section>
+      <section className="space-y-12 sm:space-y-32">
         <AccordionList />
         <NewsLetter />
       </section>

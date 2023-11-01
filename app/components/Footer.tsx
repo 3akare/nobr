@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <footer className="p-2 text-xs">
+    <footer className="p-2 text-xs mt-20">
       <nav className="p-2 container mx-auto flex flex-col-reverse sm:flex-row justify-between md:items-center gap-2 text-foreground/80">
         <section>
           <p>
