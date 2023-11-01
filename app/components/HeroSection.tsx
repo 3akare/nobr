@@ -1,7 +1,37 @@
+import Link from "next/link";
+import { Button } from "./ui/button";
+// import DropDownMenu from "./DropDownMenu";
+
 function HeroSection() {
   return (
-    <section className="p-4 h-[24rem] w-full flex items-center justify-center">
-      <p>HeroSection</p>
+    <section className="container mx-auto mt-16 mb-16 p-8 h-fit w-full text-center flex items-center flex-col space-y-10">
+      <Link
+        className="rounded-2xl bg-orange-500 text-background px-4 py-1.5 text-xs sm:text-sm"
+        target="_blank"
+        href="/"
+      >
+        Follow along on Twitter
+      </Link>
+      <h1 className="mt-2 font-heading font-bold text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
+        Anonymous <span className="text-orange-500">Chat</span> For Everyone
+      </h1>
+      <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-lg text-sm sm:leading-8">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+        voluptatem. Commodi assumenda, quibusdam omnis quae aliquam cupiditate
+        dignissimos in optio blanditiis officiis!
+      </p>
+      <div
+        className="flex
+       gap-4 items-center"
+      >
+        <Button className="w-24 h-8 sm:w-28 sm:h-10">Chat</Button>
+        <Button
+          variant="ghost"
+          className="w-24 h-8 sm:w-28 sm:h-10 text-orange-500 hover:text-background outline hover:outline-orange-500 hover:bg-orange-500 transition-colors"
+        >
+          Video
+        </Button>
+      </div>
     </section>
   );
 }

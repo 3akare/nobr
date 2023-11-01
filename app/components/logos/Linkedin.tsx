@@ -1,6 +1,5 @@
 import { SVGProps } from "react";
 
-
 export function Linkedin(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
