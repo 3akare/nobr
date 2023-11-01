@@ -6,7 +6,7 @@ function Footer() {
       <nav className="p-2 container mx-auto flex flex-col-reverse sm:flex-row justify-between md:items-center gap-2 text-foreground/80">
         <section>
           <p>
-            &copy;2023 <span className="text-orange-500">nobr</span>. All rights
+            &copy;2023 <span className="text-secondary-pOrange">nobr</span>. All rights
             reserved
           </p>
         </section>
