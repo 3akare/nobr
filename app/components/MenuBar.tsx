@@ -4,8 +4,8 @@ import { Sheet, SheetContent, SheetTrigger } from "@/app/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
-import { Twitter } from "./logos/Twitter";
-import { LinkedIn } from "./logos/LinkedIn";
+import { Twitter } from "@/app/components/logos/Twitter";
+import { LinkedIn } from "@/app/components/logos/LinkedIn";
 
 function MenuBar() {
   return (
