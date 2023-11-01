@@ -1,31 +1,23 @@
-import Image from "next/image";
-import logo from "../../public/menu.svg";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "./ui/card";
 
-function FeaturesCard({
-  cardImg,
-  cardHeading,
-  cardText,
-}: {
-  cardImg: string;
-  cardHeading: string;
-  cardText: string;
-}) {
+function FeaturesCard() {
   return (
-    <div className="overflow-hidden rounded-lg border bg-background p-2">
-      <div className="flex h-fit flex-col justify-between rounded-md p-6">
-        <Image
-          src={logo}
-          alt={cardHeading}
-          className="w-12 h-12"
-          width={48}
-          height={48}
-        />
-        <div className="space-y-2">
-          <h3 className="font-bold">{cardHeading}</h3>
-          <p className="text-sm text-muted-foreground">{cardText}</p>
-        </div>
-      </div>
-    </div>
+    <Card className="w-[20rem] sm:w-[18rem] md:w-[15.25rem] text-center">
+      <CardHeader>
+        <CardTitle>Hello world</CardTitle>
+        <CardContent className="px-0 md:h-[16rem]">
+          <CardDescription>Hello world it is me again</CardDescription>
+        </CardContent>
+        <CardFooter className="text-foreground-accent px-0">Coming Soon!</CardFooter>
+      </CardHeader>
+    </Card>
   );
 }
 

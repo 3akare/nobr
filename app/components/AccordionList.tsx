@@ -7,22 +7,23 @@ import {
 
 function AccordionList() {
   return (
-    <Accordion type="single" collapsible className="container mx-auto max-w-5xl p-4 m-4">
+    <Accordion type="single" collapsible className="container mx-auto max-w-5xl p-4 px-8 sm:px-16 m-4 h-72">
+      <h1 className="text-xl my-2 py-2 text-muted-foreground font-semibold">Frequently Asked Questions</h1>
       <AccordionItem value="item-1">
-        <AccordionTrigger className="text-lg">Is it accessible?</AccordionTrigger>
-        <AccordionContent>
+        <AccordionTrigger className="text-xl">Is it accessible?</AccordionTrigger>
+        <AccordionContent className="text-lg">
           Yes. It adheres to the WAI-ARIA design pattern.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2">
-        <AccordionTrigger className="text-lg">Is it accessible?</AccordionTrigger>
-        <AccordionContent className="text-base">
+        <AccordionTrigger className="text-xl">Is it accessible?</AccordionTrigger>
+        <AccordionContent className="text-lg">
           Yes. It adheres to the WAI-ARIA design pattern.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3">
-        <AccordionTrigger className="text-lg">Is it accessible?</AccordionTrigger>
-        <AccordionContent className="text-base">
+        <AccordionTrigger className="text-xl">Is it accessible?</AccordionTrigger>
+        <AccordionContent className="text-lg">
           Yes. It adheres to the WAI-ARIA design pattern.
         </AccordionContent>
       </AccordionItem>

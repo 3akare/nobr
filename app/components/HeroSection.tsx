@@ -15,7 +15,7 @@ function HeroSection() {
         Anonymous <span className="text-secondary-pOrange">Chat</span> For
         Everyone
       </h1>
-      <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl text-lg sm:leading-8">
+      <p className="max-w-[42rem] leading-normal text-foreground sm:text-xl text-lg sm:leading-8 font-light">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
         voluptatem. Commodi assumenda, quibusdam omnis quae aliquam cupiditate
         dignissimos in optio blanditiis officiis!
@@ -24,16 +24,17 @@ function HeroSection() {
         className="flex
        gap-4 items-center w-full justify-center"
       >
-        <Button className="w-36 h-14 sm:w-44 sm:h-18 text-lg font-bold outline-foreground outline">
+        <Button className="w-36 h-14 sm:w-44 sm:h-18 text-lg font-bold outline-foreground outline rounded-2xl transition-colors duration-300">
           Chat
         </Button>
         <Button
           variant="ghost"
-          className="w-36 h-14 sm:w-44 sm:h-18 text-secondary-pOrange hover:text-background outline hover:outline-secondary-pOrange hover:bg-secondary-pOrange transition-colors text-lg font-bold"
+          className="w-36 h-14 sm:w-44 sm:h-18 text-secondary-pOrange hover:text-background ring-2 ring-secondary-pOrange hover:outline-secondary-pOrange hover:bg-secondary-pOrange transition-colors duration-300 text-lg font-bold rounded-2xl"
         >
           Video
         </Button>
       </div>
+      
     </section>
   );
 }
