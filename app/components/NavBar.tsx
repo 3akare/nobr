@@ -5,7 +5,7 @@ import darkLogo from "../../public/dark-nobr-logo.svg";
 
 import { ModeToggle } from "./ModeToggle";
 import { ChatIcon } from "./logos/ChatIcon";
-import MenuBar from "./MenuBar";
+// import MenuBar from "./MenuBar";
 import { VideoIcon } from "./logos/VideoIcon";
 import {
   Tooltip,
@@ -20,7 +20,7 @@ function NavBar() {
       <nav className="p-2 container mx-auto flex justify-between items-center font-medium text-sm">
         <div className="flex items-center space-x-8">
           <div className="flex gap-2 items-center justify-center">
-            <MenuBar />
+            {/* <MenuBar /> */}
             <Link href="/" prefetch={true}>
               <Image
                 src={lightLogo}
