@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.className} suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link
           rel="shortcut icon"
@@ -40,7 +40,7 @@ export default function RootLayout({
         enableSystem
         disableTransitionOnChange
       >
-        <body className="min-h-screen antialiased">
+        <body className="min-h-screen font-sans antialiased">
           <NavBar />
           {children}
           <Footer />
