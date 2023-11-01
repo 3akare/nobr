@@ -17,7 +17,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="shortcut icon" href="./light-nobr-logo.svg" type="image/x-icon" className="dark:invert dark:filter"/>
+        <link
+          rel="shortcut icon"
+          href="./light-nobr-logo.svg"
+          type="image/x-icon"
+          className="dark:invert dark:filter"
+        />
       </head>
       <ThemeProvider
         attribute="class"

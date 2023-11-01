@@ -4,15 +4,8 @@ import lightLogo from "../../public/light-nobr-logo.svg";
 import darkLogo from "../../public/dark-nobr-logo.svg";
 
 import { ModeToggle } from "./ModeToggle";
-import { ChatIcon } from "./logos/ChatIcon";
-// import MenuBar from "./MenuBar";
-import { VideoIcon } from "./logos/VideoIcon";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
+import MenuBar from "./MenuBar";
+import ToolTipLinks from "./ToolTipLinks";
 
 function NavBar() {
   return (
@@ -20,7 +13,7 @@ function NavBar() {
       <nav className="p-2 container mx-auto flex justify-between items-center font-medium text-sm">
         <div className="flex items-center space-x-8">
           <div className="flex gap-2 items-center justify-center">
-            {/* <MenuBar /> */}
+            <MenuBar />
             <Link href="/" prefetch={true}>
               <Image
                 src={lightLogo}
@@ -36,7 +29,7 @@ function NavBar() {
               />
             </Link>
           </div>
-          <ul className="gap-4 items-center justify-center flex-1 hidden sm:flex text-foreground">
+          <div className="gap-4 items-center justify-center flex-1 hidden sm:flex text-foreground">
             <Link
               href="/"
               className="transition-colors hover:text-foreground text-foreground/80"
@@ -49,37 +42,14 @@ function NavBar() {
             >
               Pricing
             </Link>
-          </ul>
+          </div>
         </div>
-        <nav className="flex items-center gap-4">
+        <div className="flex items-center gap-4">
           <div className="gap-4 items-center justify-center hidden sm:flex">
-            <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger>
-                  <Link href="/">
-                    <ChatIcon className="w-5 h-5" />
-                  </Link>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>Text Chat</p>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
-            <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger>
-                  <Link href="/">
-                    <VideoIcon className="w-6 h-6" />
-                  </Link>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>Video Chat</p>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
+            <ToolTipLinks />
           </div>
           <ModeToggle variant={"ghost"} classname="focus-visible:hidden" />
-        </nav>
+        </div>
       </nav>
     </header>
   );
