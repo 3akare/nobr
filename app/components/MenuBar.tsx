@@ -1,18 +1,11 @@
 import menu from "../../public/menu.svg";
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/app/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/app/components/ui/sheet";
+
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { Twitter } from "./logos/Twitter";
-import { Linkedin } from "./logos/LinkedIn";
+import { LinkedIn } from "./logos/LinkedIn";
 
 function MenuBar() {
   return (
@@ -48,7 +41,7 @@ function MenuBar() {
               <Twitter className="w-6 h-6" />
             </Link>
             <Link href="">
-              <Linkedin className="w-6 h-6" />
+              <LinkedIn className="w-6 h-6" />
             </Link>
           </div>
         </aside>
