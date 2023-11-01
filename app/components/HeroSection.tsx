@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
+import { ExampleComponent } from "./AnimatedHeading";
 // import DropDownMenu from "./DropDownMenu";
 
 function HeroSection() {
@@ -12,9 +13,10 @@ function HeroSection() {
       >
         Follow along on Twitter
       </Link>
-      <h1 className="font-bold text-5xl md:text-6xl lg:text-7xl">
-        Anonymous <span className="text-orange-500">Chat</span> For Everyone
-      </h1>
+      <ExampleComponent />
+      {/* <h1 className="font-bold text-5xl md:text-6xl lg:text-7xl"> */}
+      {/* Anonymous <span className="text-orange-500">Chat</span> For Everyone */}
+      {/* </h1> */}
       <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl text-lg sm:leading-8">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
         voluptatem. Commodi assumenda, quibusdam omnis quae aliquam cupiditate

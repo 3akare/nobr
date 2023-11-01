@@ -21,6 +21,7 @@ function NavBar() {
                 className="dark:hidden"
                 quality={100}
                 loading="eager"
+                priority
               />
               <Image
                 src={darkLogo}
@@ -28,6 +29,7 @@ function NavBar() {
                 quality={100}
                 loading="eager"
                 className="hidden dark:block"
+                priority
               />
             </Link>
           </div>
