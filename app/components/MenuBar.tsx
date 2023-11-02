@@ -13,8 +13,8 @@ import {
 
 
 //images
-import twitter from "../../public/linkedIn.svg";
-import linkedIn from "../../public/twitter.svg";
+import twitter from "@logos/twitter.svg";
+import linkedIn from "@logos/linkedIn.svg";
 
 import light from "@logos/light-nobr-logo.svg";
 import dark from "@logos/dark-nobr-logo.svg";
@@ -76,7 +76,7 @@ function MenuBar() {
                 <Image src={twitter} alt="twitter" className="w-9 h-9" />
               </Link>
               <Link href="/">
-                <Image src={linkedIn} alt="LinkedIn" className="w-9 h-9" />
+                <Image src={linkedIn} alt="linkedIn" className="w-9 h-9" />
               </Link>
             </div>
           </aside>
