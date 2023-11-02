@@ -33,7 +33,7 @@ function NavBar() {
               />
             </Link>
           </div>
-          <div className="gap-4 items-center justify-center flex-1 hidden sm:flex text-foreground">
+          {/* <div className="gap-4 items-center justify-center flex-1 hidden sm:flex text-foreground">
             <Link
               href="/"
               className="transition-colors hover:text-foreground text-foreground/80"
@@ -46,7 +46,7 @@ function NavBar() {
             >
               Pricing
             </Link>
-          </div>
+          </div> */}
         </div>
         <div className="flex items-center gap-4">
           <div className="gap-4 items-center justify-center hidden sm:flex">

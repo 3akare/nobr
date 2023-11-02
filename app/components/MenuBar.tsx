@@ -51,15 +51,14 @@ function MenuBar() {
         </SheetHeader>
         <aside>
           <ul className="space-y-10 text-foreground font-bold text-3xl">
-            <Link href="#features" className="block">
-              Features
-            </Link>
-
-            <Link href="#about" className="block">
-              About
-            </Link>
             <Link href="/" className="block">
               Terms & Conditions
+            </Link>
+            <Link href="/" className="block">
+              Privacy Policy
+            </Link>
+            <Link href="/" className="block">
+              Community Guidelines
             </Link>
           </ul>
           <div className="gap-8 flex absolute bottom-8">

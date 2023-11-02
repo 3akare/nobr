@@ -31,7 +31,7 @@ export default function RootLayout({
         enableSystem
         disableTransitionOnChange
       >
-        <body className="min-h-screen font-sans antialiased">
+        <body className="font-sans antialiased">
           <NavBar />
           {children}
           <Footer />

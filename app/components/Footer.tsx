@@ -15,8 +15,11 @@ function Footer() {
             <Link href="/" className="mr-2 hover:text-foreground">
               Terms & Conditions
             </Link>
-            <Link href="/" className="pl-2 hover:text-foreground">
+            <Link href="/" className="px-2 hover:text-foreground">
               <p>Privacy Policy</p>
+            </Link>
+            <Link href="/" className="pl-2 hover:text-foreground">
+              <p>Community Guidelines</p>
             </Link>
           </ul>
         </section>

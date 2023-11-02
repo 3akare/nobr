@@ -16,15 +16,18 @@ export default function NewsLetter() {
         <CardTitle className="font-semibold text-[2rem] leading-[1.1] md:text-4xl">
           Get notified when we are launching
         </CardTitle>
-        <CardDescription className="text-lg">
-          Reprehe enderit ad esse et non officia in nulla. Id proident tempo
-          incididunt nostrud nulla et culoa
+        <CardDescription>
+          <p className="max-w-[50rem] mx-auto leading-relaxed text-center !mb-16 text-lg md:text-xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+            voluptatem. Commodi assumenda, quibusdam omnis quae aliquam
+            cupiditate dignissimos in optio blanditiis officiis!
+          </p>
         </CardDescription>
       </CardHeader>
       <CardContent className="p-0">
         <form>
           <div className="flex w-full items-center justify-center gap-4 mb-8">
-            <div className="flex flex-col flex-1 max-w-3xl ">
+            <div className="flex flex-col flex-auto max-w-2xl items-center">
               <Label htmlFor="name" className="sr-only">
                 Name
               </Label>
@@ -35,8 +38,8 @@ export default function NewsLetter() {
                 className="text-lg focus:ring-0 focus-visible:ring-0 focus-within:ring-0 focus-visible:outline-none h-12 focus-visible:ring-offset-0"
               />
             </div>
-            <Button className="self-end text-lg bg-secondary-pOrange hover:bg-background hover:text-foreground hover:ring-2 ring-secondary-pOrange hover:text-secondary-pOrange h-12">
-              Deploy
+            <Button className="text-lg  h-11">
+              Add Email
             </Button>
           </div>
         </form>
