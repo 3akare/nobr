@@ -17,6 +17,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        pOrange: "rgb(243, 121, 10)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -29,7 +30,6 @@ module.exports = {
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
-          pOrange: "rgb(243, 121, 10)",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
