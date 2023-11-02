@@ -1,4 +1,7 @@
+//next imports
 import Link from "next/link";
+
+//shadcn UI components
 import { Button } from "./ui/button";
 
 const HeroComponent = () => {

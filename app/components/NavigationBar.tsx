@@ -3,8 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 //components
-import ModeToggle from "./ModeToggle";
-import MenuBar from "./MenuBar";
+import { MenuBar, ModeToggle } from ".";
 
 //images
 import light from "@logos/light-nobr-logo.svg";

@@ -3,7 +3,7 @@
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 
-//components
+//shadcn UI components
 import { Button } from "@/app/components/ui/button";
 import {
   DropdownMenu,

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-//components
+//shadcn UI components
 import {
   Sheet,
   SheetContent,
