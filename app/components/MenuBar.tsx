@@ -13,8 +13,8 @@ import {
 
 
 //images
-import twitterLogo from "@/public/twitter.svg";
-import linkedInLogo from "@/public/linkedIn.svg";
+import twitterLogo from "@images/twitter.svg";
+import linkedInLogo from "@images/linkedIn.svg";
 import light from "@logos/light-nobr-logo.svg";
 import dark from "@logos/dark-nobr-logo.svg";
 import menu from "@images/menu.svg";
