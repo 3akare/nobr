@@ -13,8 +13,8 @@ import {
 
 
 //images
-import twitterLogo from "@images/twitter.svg";
-import linkedInLogo from "@images/linkedIn.svg";
+import twitter from "../../public/linkedIn.svg";
+import linkedIn from "../../public/twitter.svg";
 import light from "@logos/light-nobr-logo.svg";
 import dark from "@logos/dark-nobr-logo.svg";
 import menu from "@images/menu.svg";
@@ -72,10 +72,10 @@ function MenuBar() {
             </ul>
             <div className="flex items-center gap-8 absolute bottom-16">
               <Link href="/">
-                <Image src={twitterLogo} alt="twitter" className="w-9 h-9" />
+                <Image src={twitter} alt="twitter" className="w-9 h-9" />
               </Link>
               <Link href="/">
-                <Image src={linkedInLogo} alt="LinkedIn" className="w-9 h-9" />
+                <Image src={linkedIn} alt="LinkedIn" className="w-9 h-9" />
               </Link>
             </div>
           </aside>
