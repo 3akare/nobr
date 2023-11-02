@@ -1,4 +1,8 @@
-import menu from "../../public/menu.svg";
+//next imports
+import Image from "next/image";
+import Link from "next/link";
+
+//components
 import {
   Sheet,
   SheetContent,
@@ -7,15 +11,16 @@ import {
   SheetTrigger,
 } from "@/app/components/ui/sheet";
 
+
+//images
+import twitterLogo from "@/public/twitter.svg";
+import linkedInLogo from "@/public/linkedIn.svg";
+import light from "@logos/light-nobr-logo.svg";
+import dark from "@logos/dark-nobr-logo.svg";
+import menu from "@images/menu.svg";
+
+//functions
 import { cn } from "@/lib/utils";
-import Image from "next/image";
-import Link from "next/link";
-
-import twitterLogo from "@/public/Twitter.svg";
-import linkedInLogo from "@/public/LinkedIn.svg";
-
-import lightLogo from "../../public/light-nobr-logo.svg";
-import darkLogo from "../../public/dark-nobr-logo.svg";
 
 function MenuBar() {
   return (
@@ -28,48 +33,53 @@ function MenuBar() {
         />
       </SheetTrigger>
       <SheetContent side={"left"} className={cn("sm:hidden")}>
-        <SheetHeader>
-          <SheetTitle className="text-2xl text-left mb-12">
-            <div className="flex gap-2 items-center">
+        <section className="space-y-10 pl-2">
+          <SheetHeader>
+            <SheetTitle>
               <Link href="/" prefetch={true}>
                 <Image
-                  src={lightLogo}
+                  src={light}
                   alt="nobr logo"
                   className="dark:hidden"
                   quality={100}
                   loading="eager"
                 />
                 <Image
-                  src={darkLogo}
+                  src={dark}
                   alt="nobr logo"
                   className="hidden dark:block"
                 />
               </Link>
-              <h1>nobr</h1>
+            </SheetTitle>
+          </SheetHeader>
+          <aside>
+            <ul className="space-y-10 text-foreground font-semibold text-3xl">
+              <li className="w-fit">
+                <Link href="/" prefetch={true}>
+                  Terms of Services
+                </Link>
+              </li>
+              <li className="w-fit">
+                <Link href="/" prefetch={true}>
+                  Privacy Policy
+                </Link>
+              </li>
+              <li className="w-fit">
+                <Link href="/" prefetch={true}>
+                  Community Guidelines
+                </Link>
+              </li>
+            </ul>
+            <div className="flex items-center gap-8 absolute bottom-16">
+              <Link href="/">
+                <Image src={twitterLogo} alt="twitter" className="w-9 h-9" />
+              </Link>
+              <Link href="/">
+                <Image src={linkedInLogo} alt="LinkedIn" className="w-9 h-9" />
+              </Link>
             </div>
-          </SheetTitle>
-        </SheetHeader>
-        <aside>
-          <ul className="space-y-10 text-foreground font-bold text-3xl">
-            <Link href="/" className="block">
-              Terms & Conditions
-            </Link>
-            <Link href="/" className="block">
-              Privacy Policy
-            </Link>
-            <Link href="/" className="block">
-              Community Guidelines
-            </Link>
-          </ul>
-          <div className="gap-8 flex absolute bottom-8">
-            <Link href="">
-              <Image src={twitterLogo} alt="twitter" className="w-10 h-10" />
-            </Link>
-            <Link href="">
-              <Image src={linkedInLogo} alt="LinkedIn" className="w-10 h-10" />
-            </Link>
-          </div>
-        </aside>
+          </aside>
+        </section>
       </SheetContent>
     </Sheet>
   );

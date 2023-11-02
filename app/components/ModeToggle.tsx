@@ -1,8 +1,9 @@
 "use client";
-import * as React from "react";
+//next and lucide imports
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 
+//components
 import { Button } from "@/app/components/ui/button";
 import {
   DropdownMenu,
@@ -10,9 +11,11 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/app/components/ui/dropdown-menu";
+
+//functions
 import { cn } from "@/lib/utils";
 
-export function ModeToggle({
+function ModeToggle({
   variant,
   classname,
 }: {
@@ -38,7 +41,7 @@ export function ModeToggle({
           <span className="sr-only">Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="text-lg font-semibold">
+      <DropdownMenuContent align="end" className="text-lg font-medium">
         <DropdownMenuItem onClick={() => setTheme("light")}>
           Light
         </DropdownMenuItem>
@@ -52,3 +55,4 @@ export function ModeToggle({
     </DropdownMenu>
   );
 }
+export default ModeToggle;
