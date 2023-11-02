@@ -8,7 +8,7 @@ import {
 function AccordionList() {
   return (
     <Accordion type="single" collapsible className="container mx-auto max-w-5xl p-4 sm:px-16 m-4 h-fit">
-      <h1 className="text-2xl my-2 py-2 font-semibold">Frequently Asked Questions</h1>
+      <h1 className="text-2xl my-2 py-2 font-semibold text-center">Frequently Asked Questions</h1>
       <AccordionItem value="item-1">
         <AccordionTrigger className="text-xl">Is it accessible?</AccordionTrigger>
         <AccordionContent className="text-lg">
