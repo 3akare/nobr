@@ -1,9 +1,8 @@
 import { ThemeProvider } from "./components/theme-provider";
 import type { Metadata } from "next";
-
 import "./globals.css";
-import Footer from "./components/Footer";
-import NavigationBar from "./components/NavigationBar";
+
+import { Footer, NavigationBar } from "./components";
 
 export const metadata: Metadata = {
   title: "nobr | Home",
