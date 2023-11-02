@@ -15,6 +15,7 @@ import {
 //images
 import twitter from "../../public/linkedIn.svg";
 import linkedIn from "../../public/twitter.svg";
+
 import light from "@logos/light-nobr-logo.svg";
 import dark from "@logos/dark-nobr-logo.svg";
 import menu from "@images/menu.svg";
