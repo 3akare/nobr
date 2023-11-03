@@ -10,14 +10,14 @@ const Blob = () => {
       <Image
         src={blob}
         alt="blob"
-        className="absolute -top-10 blur opacity-30 hidden lg:block"
+        className="absolute -top-10 blur opacity-30 hidden lg:block dark:hidden"
         priority
         loading="eager"
       />
       <Image
         src={blob}
         alt="blob"
-        className="absolute -bottom-90 right-0 rotate-180 blur opacity-20 hidden lg:block"
+        className="absolute -bottom-90 right-0 rotate-180 blur opacity-20 hidden lg:block dark:hidden"
         priority
         loading="eager"
       />
