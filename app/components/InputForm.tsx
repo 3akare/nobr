@@ -22,8 +22,8 @@ import { addDoc } from "firebase/firestore";
 import { collectionRef } from "../../firebase";
 
 const FormSchema = z.object({
-  username: z.string().min(2, {
-    message: "Username must be at least 2 characters.",
+  username: z.string().min(4, {
+    message: "Username must be at least 4 characters.",
   }),
   email: z.string().email(),
 });
@@ -40,8 +40,8 @@ export function InputForm() {
   function onSubmit(data: z.infer<typeof FormSchema>) {
     addDoc(collectionRef, { ...data });
     toast({
-      title: "You submitted the following values:",
-      description: <p>Name and Email saved</p>,
+      title: "Saved!",
+      description: <p>You have successfully been added to the waiting list!</p>,
     });
     form.reset();
   }
@@ -56,34 +56,34 @@ export function InputForm() {
           control={form.control}
           name="username"
           render={({ field }) => (
-              <FormItem>
-                <FormLabel>Username</FormLabel>
-                <FormControl>
-                  <Input
-                    placeholder="Username"
-                    {...field}
-                    className="focus-visible:ring-0 focus-visible:ring-offset-0 h-11 text-base"
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
+            <FormItem>
+              <FormLabel>Username</FormLabel>
+              <FormControl>
+                <Input
+                  placeholder="Username"
+                  {...field}
+                  className="focus-visible:ring-0 focus-visible:ring-offset-0 h-11 text-base"
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
           )}
         />
         <FormField
           control={form.control}
           name="email"
           render={({ field }) => (
-              <FormItem>
-                <FormLabel>Email</FormLabel>
-                <FormControl>
-                  <Input
-                    placeholder="Email"
-                    {...field}
-                    className="focus-visible:ring-0 focus-visible:ring-offset-0 h-11 text-base"
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
+            <FormItem>
+              <FormLabel>Email</FormLabel>
+              <FormControl>
+                <Input
+                  placeholder="Email"
+                  {...field}
+                  className="focus-visible:ring-0 focus-visible:ring-offset-0 h-11 text-base"
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
           )}
         />
         <Button type="submit">Submit</Button>
