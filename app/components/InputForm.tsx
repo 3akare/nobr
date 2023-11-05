@@ -11,6 +11,7 @@ import {
   FormControl,
   FormField,
   FormItem,
+  FormLabel,
   FormMessage,
 } from "@/app/components/ui/form";
 import { Input } from "@/app/components/ui/input";
@@ -19,7 +20,6 @@ import { toast } from "@/app/components/ui/use-toast";
 //Firebase imports
 import { addDoc } from "firebase/firestore";
 import { collectionRef } from "../../firebase";
-
 
 const FormSchema = z.object({
   username: z.string().min(2, {
@@ -56,8 +56,8 @@ export function InputForm() {
           control={form.control}
           name="username"
           render={({ field }) => (
-            <>
               <FormItem>
+                <FormLabel>Username</FormLabel>
                 <FormControl>
                   <Input
                     placeholder="Username"
@@ -67,15 +67,14 @@ export function InputForm() {
                 </FormControl>
                 <FormMessage />
               </FormItem>
-            </>
           )}
         />
         <FormField
           control={form.control}
           name="email"
           render={({ field }) => (
-            <>
               <FormItem>
+                <FormLabel>Email</FormLabel>
                 <FormControl>
                   <Input
                     placeholder="Email"
@@ -85,7 +84,6 @@ export function InputForm() {
                 </FormControl>
                 <FormMessage />
               </FormItem>
-            </>
           )}
         />
         <Button type="submit">Submit</Button>
