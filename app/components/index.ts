@@ -1,7 +1,7 @@
 export { default as AccordionList } from "./AccordionList";
 export { default as Footer } from "./Footer";
 export { default as HeroComponent } from "./HeroComponent";
-export { default as InputWithButton } from "./InputWithButton";
+export { InputForm } from "./InputForm";
 export { default as MenuBar } from "./MenuBar";
 export { default as ModeToggle } from "./ModeToggle";
 export { default as NavigationBar } from "./NavigationBar";

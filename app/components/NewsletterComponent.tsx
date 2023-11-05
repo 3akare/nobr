@@ -1,7 +1,7 @@
 "use client";
 
 //Components
-import { InputWithButton } from ".";
+import { InputForm } from ".";
 
 //shadcn UI components
 import {
@@ -25,7 +25,7 @@ const NewsletterComponent = () => {
             quibusdam repudiandae quod unde velit quidem in culpa?
           </CardDescription>
         </CardHeader>
-        <InputWithButton />
+        <InputForm />
       </CardContent>
     </Card>
   );
