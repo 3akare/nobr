@@ -1,3 +1,4 @@
+"use client";
 //next imports
 import Image from "next/image";
 import Link from "next/link";
@@ -11,7 +12,6 @@ import {
   SheetTrigger,
 } from "@/app/components/ui/sheet";
 
-
 //images
 import twitter from "@logos/twitter.svg";
 import linkedIn from "@logos/linkedIn.svg";
@@ -22,10 +22,15 @@ import menu from "@images/menu.svg";
 
 //functions
 import { cn } from "@/lib/utils";
+import { useState } from "react";
 
 function MenuBar() {
+  const [open, setOpen] = useState(false);
+  const handleOpenClose = () => {
+    setOpen((state) => !state);
+  };
   return (
-    <Sheet>
+    <Sheet onOpenChange={setOpen} open={open}>
       <SheetTrigger className={cn("sm:hidden")}>
         <Image
           src={menu}
@@ -37,7 +42,7 @@ function MenuBar() {
         <section className="space-y-10 pl-2">
           <SheetHeader>
             <SheetTitle>
-              <Link href="/" prefetch={true}>
+              <Link href="/" prefetch={true} onClick={handleOpenClose}>
                 <Image
                   src={light}
                   alt="nobr logo"
@@ -56,26 +61,38 @@ function MenuBar() {
           <aside>
             <ul className="space-y-10 text-foreground font-semibold text-3xl">
               <li className="w-fit">
-                <Link href="/" prefetch={true}>
+                <Link
+                  href="/legal#terms"
+                  prefetch={true}
+                  onClick={handleOpenClose}
+                >
                   Terms of Services
                 </Link>
               </li>
               <li className="w-fit">
-                <Link href="/" prefetch={true}>
+                <Link
+                  href="/legal#privacy"
+                  prefetch={true}
+                  onClick={handleOpenClose}
+                >
                   Privacy Policy
                 </Link>
               </li>
               <li className="w-fit">
-                <Link href="/" prefetch={true}>
+                <Link
+                  href="/legal#community"
+                  prefetch={true}
+                  onClick={handleOpenClose}
+                >
                   Community Guidelines
                 </Link>
               </li>
             </ul>
             <div className="flex items-center gap-8 absolute bottom-16">
-              <Link href="/">
+              <Link href="/https://twitter.com/nobr_hq">
                 <Image src={twitter} alt="twitter" className="w-9 h-9" />
               </Link>
-              <Link href="/">
+              <Link href="https://www.linkedin.com/company/nobr/">
                 <Image src={linkedIn} alt="linkedIn" className="w-9 h-9" />
               </Link>
             </div>
