@@ -42,7 +42,7 @@ function MenuBar() {
         <section className="space-y-10 pl-2">
           <SheetHeader>
             <SheetTitle>
-              <Link href="/" prefetch={true} onClick={handleOpenClose}>
+              <Link href="/" onClick={handleOpenClose}>
                 <Image
                   src={light}
                   alt="nobr logo"
@@ -72,7 +72,6 @@ function MenuBar() {
               <li className="w-fit">
                 <Link
                   href="/legal#privacy"
-                  prefetch={true}
                   onClick={handleOpenClose}
                 >
                   Privacy Policy
@@ -81,7 +80,6 @@ function MenuBar() {
               <li className="w-fit">
                 <Link
                   href="/legal#community"
-                  prefetch={true}
                   onClick={handleOpenClose}
                 >
                   Community Guidelines
@@ -89,10 +87,13 @@ function MenuBar() {
               </li>
             </ul>
             <div className="flex items-center gap-8 absolute bottom-16">
-              <Link href="/https://twitter.com/nobr_hq">
+              <Link href="/https://twitter.com/nobr_hq" target="_blank">
                 <Image src={twitter} alt="twitter" className="w-9 h-9" />
               </Link>
-              <Link href="https://www.linkedin.com/company/nobr/">
+              <Link
+                href="https://www.linkedin.com/company/nobr/"
+                target="_blank"
+              >
                 <Image src={linkedIn} alt="linkedIn" className="w-9 h-9" />
               </Link>
             </div>

@@ -36,9 +36,10 @@ function AccordionList() {
         </AccordionTrigger>
         <AccordionContent className="text-lg">
           <span className="text-pOrange">nobr</span> is an abbreviation of
-          'nobber,' which in turn is derived from 'hobbnobber.' That's a fun
-          play on the word 'hobnob,' which means to socialize in a relaxed and
-          informal way
+          &apos;nobber,&apos; which in turn is derived from
+          &apos;hobbnobber.&apos; That&apos;s a fun play on the word
+          &apos;hobnob,&apos; which means to socialize in a relaxed and informal
+          way
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3">
@@ -48,11 +49,11 @@ function AccordionList() {
           </h1>
         </AccordionTrigger>
         <AccordionContent className="text-lg">
-          We're not there quite yet! We're still in the process of developing
-          the app, but we expect it to be available for download soon. In the
-          meantime, you can use our fully functional web application to chat
-          anonymously with people from all over the world. Be sure to subscribe
-          to our newsletters to get the latest news from{" "}
+          We&apos;re not there quite yet! We&apos;re still in the process of
+          developing the app, but we expect it to be available for download
+          soon. In the meantime, you can use our fully functional web
+          application to chat anonymously with people from all over the world.
+          Be sure to subscribe to our newsletters to get the latest news from{" "}
           <span className="text-pOrange">nobr</span>.
         </AccordionContent>
       </AccordionItem>

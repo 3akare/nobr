@@ -15,7 +15,7 @@ const NavigationBar = () => {
       <nav className="p-2 container mx-auto flex justify-between items-center">
         <div className="flex gap-4 items-center justify-center">
           <MenuBar />
-          <Link href="/" prefetch={true}>
+          <Link href="/">
             <Image
               src={light}
               alt="nobr logo (light mode)"

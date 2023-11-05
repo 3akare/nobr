@@ -23,14 +23,12 @@ function Footer() {
             <Link
               href="/legal"
               className="px-2 hover:text-foreground"
-              prefetch={true}
             >
               <p>Privacy Policy</p>
             </Link>
             <Link
               href="/legal"
               className="pl-2 hover:text-foreground"
-              prefetch={true}
             >
               <p>Community Guidelines</p>
             </Link>
