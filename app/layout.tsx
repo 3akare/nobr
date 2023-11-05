@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import { Footer, NavigationBar } from "./components";
+import { Toaster } from "./components/ui/toaster";
 
 export const metadata: Metadata = {
   title: "nobr | Home",
@@ -26,6 +27,7 @@ export default function RootLayout({
           <NavigationBar />
           {children}
           <Footer />
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>
