@@ -1,9 +1,10 @@
 "use client";
-
+//Zod imports
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 
+//Shadcn imports
 import { Button } from "@/app/components/ui/button";
 import {
   Form,
@@ -14,6 +15,11 @@ import {
 } from "@/app/components/ui/form";
 import { Input } from "@/app/components/ui/input";
 import { toast } from "@/app/components/ui/use-toast";
+
+//Firebase imports
+import { addDoc } from "firebase/firestore";
+import { collectionRef } from "../../firebase";
+
 
 const FormSchema = z.object({
   username: z.string().min(2, {
@@ -32,6 +38,7 @@ export function InputForm() {
   });
 
   function onSubmit(data: z.infer<typeof FormSchema>) {
+    addDoc(collectionRef, { ...data });
     toast({
       title: "You submitted the following values:",
       description: <p>Name and Email saved</p>,
@@ -53,7 +60,7 @@ export function InputForm() {
               <FormItem>
                 <FormControl>
                   <Input
-                    placeholder="Name"
+                    placeholder="Username"
                     {...field}
                     className="focus-visible:ring-0 focus-visible:ring-offset-0 h-11 text-base"
                   />
