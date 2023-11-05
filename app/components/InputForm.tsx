@@ -55,7 +55,7 @@ export function InputForm() {
                   <Input
                     placeholder="Name"
                     {...field}
-                    className="focus-visible:ring-0 focus-visible:ring-offset-0 h-11"
+                    className="focus-visible:ring-0 focus-visible:ring-offset-0 h-11 text-base"
                   />
                 </FormControl>
                 <FormMessage />
@@ -73,7 +73,7 @@ export function InputForm() {
                   <Input
                     placeholder="Email"
                     {...field}
-                    className="focus-visible:ring-0 focus-visible:ring-offset-0 h-11"
+                    className="focus-visible:ring-0 focus-visible:ring-offset-0 h-11 text-base"
                   />
                 </FormControl>
                 <FormMessage />
