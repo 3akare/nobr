@@ -18,11 +18,12 @@ const NewsletterComponent = () => {
       <CardContent className="flex flex-col items-center gap-4 px-0">
         <CardHeader className="px-0">
           <CardTitle className="text-3xl">
-            Get notified when we are launching
+            Get notified when new things happen on{" "}
+            <span className="text-pOrange">nobr</span>
           </CardTitle>
           <CardDescription className="text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
-            quibusdam repudiandae quod unde velit quidem in culpa?
+            Get your <span className="text-pOrange">nobr</span> updates
+            delivered fresh to your inbox. Subscribe today!
           </CardDescription>
         </CardHeader>
         <InputForm />

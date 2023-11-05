@@ -9,7 +9,8 @@ const HeroComponent = () => {
     <section className="p-2 w-full bg-background">
       <div className="container mx-auto p-4 w-full flex flex-col justify-center items-center space-y-10 text-center">
         <Link
-          href="/"
+          href="https://twitter.com/nobr_hq"
+          target="_blank"
           className="px-4 py-2 rounded-3xl font-medium bg-pOrange w-fit shadow-md dark:text-background"
         >
           Follow along on Twitter
@@ -18,8 +19,8 @@ const HeroComponent = () => {
           Anonymous <span className="text-pOrange">Chat</span> for Everyone
         </h1>
         <h2 className="text-lg p-2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-          aspernatur quam soluta.
+          Discover a safe and fun way to connect with people from around the
+          world
         </h2>
         <div className="flex gap-4">
           <Button
