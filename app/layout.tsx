@@ -6,63 +6,66 @@ import { Footer, NavigationBar } from "./components";
 import { Toaster } from "./components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: "nobr",
-  appleWebApp: { capable: true, statusBarStyle: "default", title: "nobr" },
-  icons:
-    "https://nobr-delta.vercel.app/_next/static/media/light-nobr-logo.46b49c35.svg",
+  title: "nobr: Anonymous Chat for Everyone",
   description:
     "Discover a safe and fun way to connect with people from around the world",
+  referrer: "origin-when-cross-origin",
+  creator: "David Bakare",
+  applicationName: "nobr",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/en-US",
+    },
+  },
   openGraph: {
-    siteName: "nobr",
-    countryName: "Nigeria",
+    title: "nobr",
     description:
       "Discover a safe and fun way to connect with people from around the world",
-    title: "nobr",
     url: "https://nobr-delta.vercel.app",
+    siteName: "nobr",
+    images: [
+      {
+        url: "https://nobr-delta.vercel.app/_next/static/media/light-nobr-logo.46b49c35.svg",
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: "en_US",
     type: "website",
-    images: {
-      url: "https://nobr-delta.vercel.app/_next/static/media/light-nobr-logo.46b49c35.svg",
-      height: 800,
-      width: 1260,
+  },
+  robots: {
+    index: false,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
+  },
+  icons: {
+    icon: "https://nobr-delta.vercel.app/_next/static/media/light-nobr-logo.46b49c35.svg",
   },
   twitter: {
+    card: "summary_large_image",
     title: "nobr",
-    creator: "David Bakare",
     description:
       "Discover a safe and fun way to connect with people from around the world",
-    images: {
-      url: "https://nobr-delta.vercel.app/_next/static/media/light-nobr-logo.46b49c35.svg",
-      height: 800,
-      width: 1260,
-    },
-    card: "summary",
+    creator: "@nobr_hq",
+    images: [
+      "https://nobr-delta.vercel.app/_next/static/media/light-nobr-logo.46b49c35.svg",
+    ],
   },
-  applicationName: "nobr",
-  keywords: [
-    "nobr",
-    "chat",
-    "private",
-    "secure",
-    "secret",
-    "message",
-    "messaging",
-    "hide",
-    "hidden",
-    "confidential",
-    "discreet",
-    "incognito",
-    "online",
-    "untraceable",
-    "strangers",
-    "someone",
-    "friend",
-    "encrypted",
-    "romance",
-    "date",
-    "where",
-    "place",
-  ],
+  category: "communication",
 };
 
 export default function RootLayout({

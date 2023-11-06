@@ -1,7 +1,3 @@
-export async function generateMetadata() {
-  return { title: "Home | nobr" };
-}
-
 import {
   AccordionList,
   HeroComponent,
