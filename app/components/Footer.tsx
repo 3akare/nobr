@@ -12,7 +12,7 @@ function Footer() {
           </p>
         </section>
         <section>
-          <ul className="flex items-center divide-x-[1px] divide-foreground">
+          <div className="flex items-center divide-x-[1px] divide-foreground">
             <Link
               href="/legal#term"
               className="mr-2 hover:text-foreground"
@@ -29,7 +29,7 @@ function Footer() {
             >
               <p>Community Guidelines</p>
             </Link>
-          </ul>
+          </div>
         </section>
       </nav>
     </footer>

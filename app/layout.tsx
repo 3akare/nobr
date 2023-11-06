@@ -17,12 +17,6 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  alternates: {
-    canonical: "/",
-    languages: {
-      "en-US": "/en-US",
-    },
-  },
   openGraph: {
     title: "nobr",
     description:
@@ -31,29 +25,35 @@ export const metadata: Metadata = {
     siteName: "nobr",
     images: [
       {
-        url: "https://nobr-delta.vercel.app/_next/static/media/light-nobr-logo.46b49c35.svg",
+        url: "",
         width: 800,
         height: 600,
+      },
+      {
+        url: "https://avatars.githubusercontent.com/u/98014597?v=4",
+        width: 1800,
+        height: 1600,
+        alt: "My custom alt",
       },
     ],
     locale: "en_US",
     type: "website",
   },
   robots: {
-    index: false,
+    index: true,
     follow: true,
     nocache: true,
     googleBot: {
       index: true,
-      follow: false,
-      noimageindex: true,
+      follow: true,
+      noimageindex: false,
       "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
     },
   },
   icons: {
-    icon: "https://nobr-delta.vercel.app/_next/static/media/light-nobr-logo.46b49c35.svg",
+    icon: "https://avatars.githubusercontent.com/u/98014597?v=4",
   },
   twitter: {
     card: "summary_large_image",
@@ -61,9 +61,7 @@ export const metadata: Metadata = {
     description:
       "Discover a safe and fun way to connect with people from around the world",
     creator: "@nobr_hq",
-    images: [
-      "https://nobr-delta.vercel.app/_next/static/media/light-nobr-logo.46b49c35.svg",
-    ],
+    images: ["https://avatars.githubusercontent.com/u/98014597?v=4"],
   },
   category: "communication",
 };

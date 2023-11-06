@@ -18,7 +18,7 @@ const NewsletterComponent = () => {
       <CardContent className="flex flex-col items-center gap-4 px-0">
         <CardHeader className="px-0">
           <CardTitle className="text-3xl">
-            Get notified when new things happen on{" "}
+            <p>Get notified when new things happen on </p>
             <span className="text-pOrange">nobr</span>
           </CardTitle>
           <CardDescription className="text-lg">
