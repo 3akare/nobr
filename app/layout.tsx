@@ -8,7 +8,8 @@ import { Toaster } from "./components/ui/toaster";
 export const metadata: Metadata = {
   title: "nobr",
   appleWebApp: { capable: true, statusBarStyle: "default", title: "nobr" },
-  icons: "./public/logos/light-nobr-logo.svg",
+  icons:
+    "https://nobr-delta.vercel.app/_next/static/media/light-nobr-logo.46b49c35.svg",
   description:
     "Discover a safe and fun way to connect with people from around the world",
   openGraph: {
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://nobr-delta.vercel.app",
     type: "website",
     images: {
-      url: "./public/logos/light-nobr-logo.sv",
+      url: "https://nobr-delta.vercel.app/_next/static/media/light-nobr-logo.46b49c35.svg",
       height: 800,
       width: 1260,
     },
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
     description:
       "Discover a safe and fun way to connect with people from around the world",
     images: {
-      url: "./public/logos/light-nobr-logo.sv",
+      url: "https://nobr-delta.vercel.app/_next/static/media/light-nobr-logo.46b49c35.svg",
       height: 800,
       width: 1260,
     },

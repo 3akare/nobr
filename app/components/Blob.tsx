@@ -10,7 +10,7 @@ const Blob = () => {
       <Image
         src={blob}
         alt="blob"
-        className="absolute -top-10 blur opacity-10 hidden lg:block dark:hidden"
+        className="absolute -top-10 blur opacity-10 hidden lg:block dark:hidden pointer-events-none"
         priority
         loading="eager"
       />
