@@ -14,20 +14,17 @@ function Footer() {
         <section>
           <ul className="flex items-center divide-x-[1px] divide-foreground">
             <Link
-              href="/legal"
+              href="/legal#term"
               className="mr-2 hover:text-foreground"
               prefetch={true}
             >
               Terms of service
             </Link>
-            <Link
-              href="/legal"
-              className="px-2 hover:text-foreground"
-            >
+            <Link href="/legal#privacy" className="px-2 hover:text-foreground">
               <p>Privacy Policy</p>
             </Link>
             <Link
-              href="/legal"
+              href="/legal#community"
               className="pl-2 hover:text-foreground"
             >
               <p>Community Guidelines</p>
