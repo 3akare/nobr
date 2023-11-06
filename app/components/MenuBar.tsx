@@ -40,7 +40,7 @@ function MenuBar() {
       </SheetTrigger>
       <SheetContent side={"left"} className={cn("sm:hidden")}>
         <section className="space-y-10 pl-2">
-          <SheetHeader>
+          <SheetHeader className="w-fit">
             <SheetTitle>
               <Link href="/" onClick={handleOpenClose}>
                 <Image
@@ -70,18 +70,12 @@ function MenuBar() {
                 </Link>
               </li>
               <li className="w-fit">
-                <Link
-                  href="/legal#privacy"
-                  onClick={handleOpenClose}
-                >
+                <Link href="/legal#privacy" onClick={handleOpenClose}>
                   Privacy Policy
                 </Link>
               </li>
               <li className="w-fit">
-                <Link
-                  href="/legal#community"
-                  onClick={handleOpenClose}
-                >
+                <Link href="/legal#community" onClick={handleOpenClose}>
                   Community Guidelines
                 </Link>
               </li>

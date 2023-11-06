@@ -1,6 +1,6 @@
 const page = () => {
   return (
-    <main className="p-4">
+    <main className="p-4 container">
       <div id="terms" className="h-20 w-full"></div>
       <section>
         <h1 className="text-2xl font-medium">Terms of service</h1>
