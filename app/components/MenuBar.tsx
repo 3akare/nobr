@@ -81,7 +81,7 @@ function MenuBar() {
               </li>
             </ul>
             <div className="flex items-center gap-8 absolute bottom-16">
-              <Link href="/https://twitter.com/nobr_hq" target="_blank">
+              <Link href="https://twitter.com/nobr_hq" target="_blank">
                 <Image src={twitter} alt="twitter" className="w-9 h-9" />
               </Link>
               <Link
