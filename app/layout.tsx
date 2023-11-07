@@ -1,13 +1,23 @@
+//providers
 import { ThemeProvider } from "./components/theme-provider";
+
+//next imports
 import type { Metadata } from "next";
+
+//CSS
 import "./globals.css";
 
+//components
 import { Footer, NavigationBar } from "./components";
+
+//shadcn components
 import { Toaster } from "./components/ui/toaster";
 
+//libs imports
+import { seoMetadata } from "../lib/seo";
+
 export const metadata: Metadata = {
-  title: "nobr | Home",
-  description: "Talk to Strangers",
+  ...seoMetadata,
 };
 
 export default function RootLayout({

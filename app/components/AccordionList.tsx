@@ -13,14 +13,14 @@ function AccordionList() {
       collapsible
       className="container mx-auto max-w-5xl p-4 sm:px-16 m-4 h-fit"
     >
-      <h1 className="text-2xl my-2 py-2 font-semibold text-left">
+      <p className="text-2xl my-2 py-2 font-semibold text-left">
         Frequently Asked Questions
-      </h1>
+      </p>
       <AccordionItem value="item-1">
         <AccordionTrigger className="text-xl">
-          <h1>
+          <p>
             What is <span className="text-pOrange">nobr</span>?
-          </h1>
+          </p>
         </AccordionTrigger>
         <AccordionContent className="text-lg">
           <span className="text-pOrange">nobr</span> is an anonymous chat
@@ -30,9 +30,9 @@ function AccordionList() {
       </AccordionItem>
       <AccordionItem value="item-2">
         <AccordionTrigger className="text-xl">
-          <h1>
+          <p>
             What does <span className="text-pOrange">nobr</span> mean?
-          </h1>
+          </p>
         </AccordionTrigger>
         <AccordionContent className="text-lg">
           <span className="text-pOrange">nobr</span> is an abbreviation of
@@ -44,9 +44,9 @@ function AccordionList() {
       </AccordionItem>
       <AccordionItem value="item-3">
         <AccordionTrigger className="text-xl text-left">
-          <h1>
+          <p>
             Is the <span className="text-pOrange">nobr</span> app available yet?
-          </h1>
+          </p>
         </AccordionTrigger>
         <AccordionContent className="text-lg">
           We&apos;re not there quite yet! We&apos;re still in the process of
