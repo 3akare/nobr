@@ -32,11 +32,9 @@ export const seoMetadata: Metadata = {
     title: "nobr: Anonymous Chat for Everyone",
     description:
       "Discover a safe and fun way to connect with people from around the world",
-    card: "summary",
+    card: "summary_large_image",
     creator: "@nobr_hq",
-    images: [
-      "https://avatars.githubusercontent.com/u/98014597?v=4",
-    ],
+    images: ["https://avatars.githubusercontent.com/u/98014597?v=4"],
   },
   category: "communication",
   icons: {
