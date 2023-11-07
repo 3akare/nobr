@@ -13,7 +13,17 @@ export const seoMetadata: Metadata = {
     url: "https://nobr-delta.vercel.app",
     siteName: "nobr",
     images: [
-      "https://raw.githubusercontent.com/3akare/nobr/b85f55bfc675d54fd129aeaef956ef4505a8a035/public/SEO/opengraph-logo%202.png",
+      {
+        url: "https://raw.githubusercontent.com/3akare/nobr/b85f55bfc675d54fd129aeaef956ef4505a8a035/public/SEO/opengraph-logo%202.png",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "https://raw.githubusercontent.com/3akare/nobr/b85f55bfc675d54fd129aeaef956ef4505a8a035/public/SEO/opengraph-logo%202.png",
+        width: 1800,
+        height: 1600,
+        alt: "My custom alt",
+      },
     ],
     locale: "en_US",
     type: "website",
@@ -25,7 +35,17 @@ export const seoMetadata: Metadata = {
     card: "summary",
     creator: "@nobr_hq",
     images: [
-      "https://raw.githubusercontent.com/3akare/nobr/b85f55bfc675d54fd129aeaef956ef4505a8a035/public/SEO/opengraph-logo%202.png",
+      {
+        url: "https://raw.githubusercontent.com/3akare/nobr/b85f55bfc675d54fd129aeaef956ef4505a8a035/public/SEO/opengraph-logo%202.png",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "https://raw.githubusercontent.com/3akare/nobr/b85f55bfc675d54fd129aeaef956ef4505a8a035/public/SEO/opengraph-logo%202.png",
+        width: 1800,
+        height: 1600,
+        alt: "My custom alt",
+      },
     ],
   },
   category: "communication",
