@@ -14,7 +14,7 @@ export const seoMetadata: Metadata = {
     siteName: "nobr",
     images: [
       {
-        url: "https://raw.githubusercontent.com/3akare/nobr/b85f55bfc675d54fd129aeaef956ef4505a8a035/public/SEO/opengraph-logo%202.png",
+        url: "",
         width: 800,
         height: 600,
       },
@@ -35,17 +35,7 @@ export const seoMetadata: Metadata = {
     card: "summary",
     creator: "@nobr_hq",
     images: [
-      {
-        url: "https://raw.githubusercontent.com/3akare/nobr/b85f55bfc675d54fd129aeaef956ef4505a8a035/public/SEO/opengraph-logo%202.png",
-        width: 800,
-        height: 600,
-      },
-      {
-        url: "https://raw.githubusercontent.com/3akare/nobr/b85f55bfc675d54fd129aeaef956ef4505a8a035/public/SEO/opengraph-logo%202.png",
-        width: 1800,
-        height: 1600,
-        alt: "My custom alt",
-      },
+      "https://raw.githubusercontent.com/3akare/nobr/b85f55bfc675d54fd129aeaef956ef4505a8a035/public/SEO/opengraph-logo%202.png",
     ],
   },
   category: "communication",
