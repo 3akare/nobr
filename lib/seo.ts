@@ -34,7 +34,13 @@ export const seoMetadata: Metadata = {
       "Discover a safe and fun way to connect with people from around the world",
     card: "summary_large_image",
     creator: "@nobr_hq",
-    images: ["https://avatars.githubusercontent.com/u/98014597?v=4"],
+    images: [
+      {
+        url: "https://avatars.githubusercontent.com/u/98014597?v=4",
+        width: 1800,
+        height: 1600,
+      },
+    ],
   },
   category: "communication",
   icons: {
@@ -48,4 +54,5 @@ export const seoMetadata: Metadata = {
       follow: true,
     },
   },
+  verification: { google: "TFcYP148KTertzx1jMuzix6-ROA_573XyKLrSl6ugWE" },
 };
