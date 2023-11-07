@@ -12,11 +12,9 @@ export const seoMetadata: Metadata = {
       "Discover a safe and fun way to connect with people from around the world",
     url: "https://nobr-delta.vercel.app",
     siteName: "nobr",
-    images: {
-      url: "https://raw.githubusercontent.com/3akare/nobr/b85f55bfc675d54fd129aeaef956ef4505a8a035/public/SEO/opengraph-logo%202.png",
-      width: 50,
-      height: 50,
-    },
+    images: [
+      "https://raw.githubusercontent.com/3akare/nobr/b85f55bfc675d54fd129aeaef956ef4505a8a035/public/SEO/opengraph-logo%202.png",
+    ],
     locale: "en_US",
     type: "website",
   },
@@ -26,11 +24,9 @@ export const seoMetadata: Metadata = {
       "Discover a safe and fun way to connect with people from around the world",
     card: "summary",
     creator: "@nobr_hq",
-    images: {
-      url: "https://raw.githubusercontent.com/3akare/nobr/b85f55bfc675d54fd129aeaef956ef4505a8a035/public/SEO/opengraph-logo%202.png",
-      width: 50,
-      height: 50,
-    },
+    images: [
+      "https://raw.githubusercontent.com/3akare/nobr/b85f55bfc675d54fd129aeaef956ef4505a8a035/public/SEO/opengraph-logo%202.png",
+    ],
   },
   category: "communication",
   icons: {
