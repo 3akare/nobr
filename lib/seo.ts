@@ -14,7 +14,7 @@ export const seoMetadata: Metadata = {
     siteName: "nobr",
     images: [
       {
-        url: "https://avatars.githubusercontent.com/u/98014597?v=4",
+        url: "https://github.com/3akare/nobr/blob/main/public/SEO/nobr-opengraph-logo.png?raw=true",
         width: 1800,
         height: 1600,
         alt: "nobr image",
@@ -31,7 +31,7 @@ export const seoMetadata: Metadata = {
     creator: "@nobr_hq",
     images: [
       {
-        url: "https://avatars.githubusercontent.com/u/98014597?v=4",
+        url: "https://github.com/3akare/nobr/blob/main/public/SEO/nobr-opengraph-logo.png?raw=true",
         width: 1800,
         height: 1600,
       },
@@ -39,7 +39,7 @@ export const seoMetadata: Metadata = {
   },
   category: "communication",
   icons: {
-    icon: "https://raw.githubusercontent.com/3akare/nobr/e887a3ad2ed5ee75bd1b20abe2a1c5d58ec992a2/public/SEO/nobr-icon.svg",
+    icon: "https://raw.githubusercontent.com/3akare/nobr/0bf3ff1d194c67ba0ca5d9b5c35baa0ed13386bc/public/SEO/nobr-icon.svg",
   },
   robots: {
     index: true,
