@@ -14,15 +14,10 @@ export const seoMetadata: Metadata = {
     siteName: "nobr",
     images: [
       {
-        url: "",
-        width: 800,
-        height: 600,
-      },
-      {
         url: "https://avatars.githubusercontent.com/u/98014597?v=4",
         width: 1800,
         height: 1600,
-        alt: "My custom alt",
+        alt: "nobr image",
       },
     ],
     locale: "en_US",
@@ -44,7 +39,7 @@ export const seoMetadata: Metadata = {
   },
   category: "communication",
   icons: {
-    icon: "https://avatars.githubusercontent.com/u/98014597?v=4",
+    icon: "https://raw.githubusercontent.com/3akare/nobr/e887a3ad2ed5ee75bd1b20abe2a1c5d58ec992a2/public/SEO/nobr-icon.svg",
   },
   robots: {
     index: true,
