@@ -19,7 +19,7 @@ export const seoMetadata: Metadata = {
         height: 600,
       },
       {
-        url: "https://raw.githubusercontent.com/3akare/nobr/b85f55bfc675d54fd129aeaef956ef4505a8a035/public/SEO/opengraph-logo%202.png",
+        url: "https://avatars.githubusercontent.com/u/98014597?v=4",
         width: 1800,
         height: 1600,
         alt: "My custom alt",
@@ -35,12 +35,12 @@ export const seoMetadata: Metadata = {
     card: "summary",
     creator: "@nobr_hq",
     images: [
-      "https://raw.githubusercontent.com/3akare/nobr/b85f55bfc675d54fd129aeaef956ef4505a8a035/public/SEO/opengraph-logo%202.png",
+      "https://avatars.githubusercontent.com/u/98014597?v=4",
     ],
   },
   category: "communication",
   icons: {
-    icon: "https://raw.githubusercontent.com/3akare/nobr/b85f55bfc675d54fd129aeaef956ef4505a8a035/public/SEO/opengraph-logo%202.png",
+    icon: "https://avatars.githubusercontent.com/u/98014597?v=4",
   },
   robots: {
     index: true,
