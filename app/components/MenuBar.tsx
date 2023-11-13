@@ -62,7 +62,7 @@ function MenuBar() {
             <ul className="space-y-10 text-foreground font-semibold text-3xl">
               <li className="w-fit">
                 <Link
-                  href="/legal#terms"
+                  href="/legal#term"
                   prefetch={true}
                   onClick={handleOpenClose}
                 >
