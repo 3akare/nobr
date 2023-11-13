@@ -37,12 +37,22 @@ export function InputForm() {
     },
   });
 
-  function onSubmit(data: z.infer<typeof FormSchema>) {
-    addDoc(collectionRef, { ...data });
-    toast({
-      title: "Saved!",
-      description: <p>You have successfully been added to the waiting list!</p>,
-    });
+  async function onSubmit(data: z.infer<typeof FormSchema>) {
+    try {
+      const docRef = await addDoc(collectionRef, { ...data });
+      if (docRef) {
+        toast({
+          title: "Contact Saved!",
+          description: <p>Your email has been saved successfully!</p>,
+        });
+      }
+    } catch (error) {
+      toast({
+        variant: "destructive",
+        title: "Failed!",
+        description: <p>Unable to save your contact. Please try again!</p>,
+      });
+    }
     form.reset();
   }
 
