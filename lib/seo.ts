@@ -33,6 +33,7 @@ export const seoMetadata: Metadata = {
     images: [
       {
         url: "/images/icons/icon-512x512.png",
+        type: "image/png",
         width: 512,
         height: 512,
       },
