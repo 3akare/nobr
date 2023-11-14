@@ -2,7 +2,7 @@
 import { ThemeProvider } from "./components/theme-provider";
 
 //next imports
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 
 //CSS
 import "./globals.css";
@@ -18,6 +18,10 @@ import { seoMetadata } from "../lib/seo";
 
 export const metadata: Metadata = {
   ...seoMetadata,
+};
+
+export const viewport: Viewport = {
+  themeColor: "#F3790A",
 };
 
 export default function RootLayout({

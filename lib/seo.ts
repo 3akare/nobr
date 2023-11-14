@@ -6,18 +6,19 @@ export const seoMetadata: Metadata = {
     "Discover a safe and fun way to connect with people from around the world",
   applicationName: "nobr",
   creator: "David Bakare",
+  metadataBase: "https://nobr-delta.vercel.app/",
   openGraph: {
     title: "nobr: Anonymous Chat for Everyone",
     description:
       "Discover a safe and fun way to connect with people from around the world",
-    url: "https://nobr-delta.vercel.app",
+    url: "https://nobr-delta.vercel.app/",
     siteName: "nobr",
     images: [
       {
-        url: "https://github.com/3akare/nobr/blob/main/public/SEO/nobr-opengraph-logo.png?raw=true",
-        width: 1800,
-        height: 1600,
-        alt: "nobr image",
+        url: "/images/icons/icon-512x512.png",
+        width: 512,
+        height: 512,
+        alt: "nobr logo",
       },
     ],
     locale: "en_US",
@@ -27,19 +28,20 @@ export const seoMetadata: Metadata = {
     title: "nobr: Anonymous Chat for Everyone",
     description:
       "Discover a safe and fun way to connect with people from around the world",
-    card: "summary_large_image",
+    card: "summary",
     creator: "@nobr_hq",
     images: [
       {
-        url: "https://github.com/3akare/nobr/blob/main/public/SEO/nobr-opengraph-logo.png?raw=true",
-        width: 1800,
-        height: 1600,
+        url: "/images/icons/icon-512x512.png",
+        width: 512,
+        height: 512,
       },
     ],
   },
   category: "communication",
   icons: {
-    icon: "https://raw.githubusercontent.com/3akare/nobr/0bf3ff1d194c67ba0ca5d9b5c35baa0ed13386bc/public/SEO/nobr-icon.svg",
+    icon: "/images/icons/icon-512x512.png",
+    apple: "/images/icons/icon-512x512.png",
   },
   robots: {
     index: true,
@@ -50,4 +52,5 @@ export const seoMetadata: Metadata = {
     },
   },
   verification: { google: "TFcYP148KTertzx1jMuzix6-ROA_573XyKLrSl6ugWE" },
+  manifest: "/manifest.json",
 };
