@@ -6,7 +6,7 @@ export const seoMetadata: Metadata = {
     "Discover a safe and fun way to connect with people from around the world",
   applicationName: "nobr",
   creator: "David Bakare",
-  metadataBase: "https://nobr-delta.vercel.app/",
+  metadataBase: new URL("https://nobr-delta.vercel.app/"),
   openGraph: {
     title: "nobr: Anonymous Chat for Everyone",
     description:
