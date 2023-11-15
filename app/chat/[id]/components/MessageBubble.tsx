@@ -5,11 +5,9 @@ const MessageBubble = ({ isRight }: { isRight: true | false }) => {
         isRight
           ? "self-end bg-pOrange dark:text-background"
           : "self-start bg-muted text-foreground"
-      } max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-3xl`}
+      } max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-3xl font-medium`}
     >
-      {!isRight && (
-        <span className="block font-bold text-pOrange">Olawale</span>
-      )}
+      {!isRight && <span className="block font-bold">Olawale</span>}
       hello world hello world hello world hello world hello world hello world
       hello worldlorem Lorem ipsum dolor sit amet consectetur, adipisicing elit.
       Natus asperiores cum quia, iste ullam distinctio adipisicing elit. Natus
