@@ -1,14 +1,13 @@
 //providers
 import { ThemeProvider } from "./components/theme-provider";
+import NavigationBarWrapper from "./components/NavigationBarWrapper";
+import FooterWrapper from "./components/FooterWrapper";
 
 //next imports
 import type { Metadata, Viewport } from "next";
 
 //CSS
 import "./globals.css";
-
-//components
-import { Footer, NavigationBar } from "./components";
 
 //shadcn components
 import { Toaster } from "./components/ui/toaster";
@@ -38,9 +37,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <NavigationBar />
+          <NavigationBarWrapper />
           {children}
-          <Footer />
+          <FooterWrapper />
           <Toaster />
         </ThemeProvider>
       </body>

@@ -9,12 +9,12 @@ import { MenuBar, ModeToggle } from ".";
 import light from "@logos/light-nobr-logo.svg";
 import dark from "@logos/dark-nobr-logo.svg";
 
-const NavigationBar = () => {
+const NavigationBar = ({ visibleMenu }: { visibleMenu: true | false }) => {
   return (
     <header className="sticky p-2 top-0 z-10 w-full bg-background backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <nav className="p-2 container mx-auto flex justify-between items-center">
         <div className="flex gap-4 items-center justify-center">
-          <MenuBar />
+          {visibleMenu && <MenuBar />}
           <Link href="/">
             <Image
               src={light}
