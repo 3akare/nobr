@@ -2,7 +2,7 @@ const page = () => {
   return (
     <>
       <div id="terms" className="h-16 w-full"></div>
-      <main className="container mx-auto px-4 pt-0">
+      <main className="container mx-auto px-4 pt-2">
         <section>
           <h1 className="text-2xl font-medium">Terms of service</h1>
           <p>
