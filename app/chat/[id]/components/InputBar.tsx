@@ -10,7 +10,7 @@ const InputBar = () => {
       </label>
       <Input
         id="messages"
-        className="w-full max-w-2xl text-base h-14 min-h-12 relative hover:ring-0 focus-visible:ring-0 focus-within:ring-0 ring-0 ring-offset-0 focus:ring-0 focus-visible:ring-offset-0"
+        className="w-full max-w-2xl text-base h-14 min-h-12 relative hover:ring-0 focus-visible:ring-0 focus-within:ring-0 ring-0 ring-offset-0 focus:ring-0 focus-visible:ring-offset-0 rounded-xl"
         placeholder="Message..."
       ></Input>
       {/* a button will be here */}

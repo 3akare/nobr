@@ -4,121 +4,318 @@ const page = () => {
       <div id="terms" className="h-16 w-full"></div>
       <main className="container mx-auto px-4 pt-2">
         <section>
-          <h1 className="text-2xl font-medium">Terms of service</h1>
-          <p>
-            Terms of service Terms of Service for &quot;nobr&quot; 1.
-            Introduction nobr is a web-based platform that allows individuals of
-            all ages, races, gender, and ethnicities to communicate anonymously
-            through text and video chatting. Our platform is designed to provide
-            a safe and secure space for people to connect and share their
-            thoughts and ideas without fear of judgement or reprisal. These
-            terms of service outline the rules and expectations for users of our
-            platform. 2.Eligibility Users are required to meet the age
-            requirements set by their local jurisdiction to use
-            &quot;nobr.&quot; Minors should seek parental or guardian consent.
-            3. User Conduct a. Respect and Civility: We expect all users to
-            engage in a respectful and civil manner, refraining from abusive
-            behavior. b. Prohibited Activities: Harassment, cyberbullying, and
-            any form of illegal activities are strictly prohibited. 4. Anonymity
-            While &quot;nobr&quot; offers anonymous chatting, the choice to
-            disclose your identity is at your own risk. &quot;nobr&quot; will
-            not be held responsible for any consequences. 5. Content Guidelines
-            a. Inappropriate Content: Users are prohibited from sharing
-            explicit, offensive, or illegal content. b. Copyright Compliance:
-            Respect copyrights and permissions when sharing content. 6. Privacy
-            and Data Usage a. Privacy Commitment: &quot;nobr&quot; values user
-            privacy. More details can be found in our Privacy Policy. 7.
-            Platform Modifications &quot;nobr&quot; reserves the right to make
-            changes or updates to the platform as necessary. 8. Account
-            Termination Users found wanting breaching the terms of service will
-            most likely be terminated suspended or even banned regarding to the
-            offense committed. 9. Disclaimers a. &quot;nobr&quot; is provided on
-            an &quot;as-is&quot; basis. We do not guarantee the accuracy,
-            availability, or security of the platform. b. Users are solely
-            responsible for their actions and interactions on &quot;nobr.&quot;
-            11. Limitation of Liability &quot;nobr&quot; will not be held liable
-            for any damages, scams, or adverse events that may occur during the
-            use of our platform. 12. Legal Framework These terms are governed by
-            the Nigerian laws and regulations 13. Contact Us If you have any
-            questions or concerns, please do not hesitate to contact us on
-          </p>
+          <h1 className="text-3xl font-bold pb-4">Terms of service</h1>
+          <ol className="space-y-4">
+            <li>
+              <h2 className="text-xl font-semibold">Introduction</h2>
+              <p>
+                nobr is a web-based platform facilitating anonymous text and
+                video communication for individuals of all ages, races, genders,
+                and ethnicities. Our goal is to foster a secure and
+                judgment-free space for sharing thoughts and ideas. These terms
+                outline user responsibilities while using our platform.
+              </p>
+            </li>
+            <li>
+              <h2 className="text-xl font-semibold">Eligibility</h2>
+              <p>
+                Users must comply with local age requirements; minors need
+                parental or guardian consent to use nobr
+              </p>
+            </li>
+            <li>
+              <h2 className="text-xl font-semibold">User Conduct</h2>
+              <ul>
+                <li>
+                  <h3 className="font-medium">Respect and Civility</h3>
+                  <p>
+                    Users must engages respectfully, refraining from abusive
+                    behavior.
+                  </p>
+                </li>
+                <li>
+                  <h3 className="font-medium">Prohibited Activities</h3>
+                  <p>
+                    Harassment, cyberbullying, and illegal activities are
+                    strictly prohibited.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h2 className="text-xl font-semibold">Anonymity</h2>
+              <p>
+                While nobr offers anonymity, users disclose their identity at
+                their own risk; nobr isn't liable for consequences.
+              </p>
+            </li>
+            <li>
+              <h2 className="text-xl font-semibold">Content Guidelines</h2>
+              <ul>
+                <li>
+                  <h3 className="font-medium">Inappropriate Content</h3>
+                  <p>
+                    Users cannot share explicit, offensive, or illegal content.
+                  </p>
+                </li>
+                <li>
+                  <h3 className="font-medium">Copyright Compliance</h3>
+                  <p>
+                    Respect copyrights and permissions when sharing content.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h2 className="text-xl font-semibold">Privacy and Data Usage</h2>
+              <ul>
+                <li>
+                  <h3 className="font-medium">Privacy Commitment</h3>
+                  <p>
+                    User privacy is valued; refer to our Privacy Policy for
+                    details.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h2 className="text-xl font-semibold">Platform Modifications</h2>
+              <p>
+                nobr reserves the right to make necessary platform changes or
+                updates
+              </p>
+            </li>
+            <li>
+              <h2 className="text-xl font-semibold">Account Termination</h2>
+              <p>
+                Users breaching terms may face suspension, termination, or bans
+                as per the offense committed.
+              </p>
+            </li>
+            <li>
+              <h2 className="text-xl font-semibold">Disclaimers</h2>
+              <ul>
+                <li>
+                  <p>
+                    nobr is provided as-is without guarantees of accuracy,
+                    availability, or security.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Users are solely responsible for their actions and
+                    interactions on nobr.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h2 className="text-xl font-semibold">Limitation of Liability</h2>
+              <p>
+                nobr isn't liable for damages, scams, or adverse events during
+                platform use.
+              </p>
+            </li>
+            <li>
+              <h2 className="text-xl font-semibold">Legal Framework</h2>
+              <p>These terms are governed by Nigerian laws and regulations.</p>
+            </li>
+            <li>
+              <h2 className="text-xl font-semibold">Contact Us</h2>
+              <p>
+                For questions or concerns, reach out to us at{" "}
+                <a href="mailto:teamnobr@gmail.com">nobr email</a>.
+              </p>
+            </li>
+          </ol>
         </section>
         <div id="privacy" className="h-20 w-full"></div>
         <section>
-          <h1 className="text-2xl font-medium">Privacy</h1>
-          <p>
-            Privacy Policy 1. Introduction &quot;nobr&quot; is committed to
-            protecting the privacy of its users. This Privacy Policy outlines
-            our practices regarding the collection, use, and disclosure of
-            personal information on our web-based platform. 2. Anonymous
-            Communication &quot;nobr&quot; provides a platform for anonymous
-            text and video chatting. We do not require users to provide personal
-            information, and we do not actively collect any identifiable data.
-            3. User Consent By using &quot;nobr,&quot; users implicitly consent
-            to the anonymous nature of the platform and acknowledge that the
-            choice to disclose any personal information is at their own risk. 4.
-            Data Collection and Usage As an anonymous platform, &quot;nobr&quot;
-            does not collect or store personal information. Conversations within
-            the platform are not monitored or stored by us. 5. User Conduct and
-            Anonymity Users are encouraged to abide by the community guidelines
-            and terms of service, respecting the anonymity of others and
-            refraining from attempting to uncover or expose the identities of
-            fellow users. 6. Third-Party Services &quot;nobr&quot; does not
-            engage in the sharing of user data with third-party services. We
-            prioritize the confidentiality and privacy of our users. 7. Security
-            Measures While &quot;nobr&quot; takes reasonable measures to ensure
-            the security of the platform, users should be aware that the
-            anonymous nature of the platform inherently carries some risk, and
-            they are advised to exercise caution. 8. Changes to Privacy Policy
-            &quot;nobr&quot; reserves the right to make changes or updates to
-            this Privacy Policy. Users are encouraged to review this policy
-            periodically for any modifications. 9. Contact Information For
-            questions or concerns regarding this Privacy Policy or the
-            platform&apos;s practices, users can contact us on gmail at ………. And
-            also on twitter @ nobr_hq By using &quot;nobr,&quot; users agree to
-            the terms outlined in this Privacy Policy. It is essential for users
-            to familiarize themselves with this policy to ensure their own
-            safety as nobr wont be held liable for any ill happening
-          </p>
+          <h1 className="text-3xl font-bold pb-4">Privacy Policy</h1>
+          <ol className="space-y-4">
+            <li>
+              <h2 className="text-xl font-semibold">Introduction</h2>
+              <p>
+                nobr is dedicated to safeguarding user privacy. This Privacy
+                Policy delineates our practices concerning the collection, use,
+                and disclosure of personal information on our web-based
+                platform.
+              </p>
+            </li>
+            <li>
+              <h2 className="text-xl font-semibold">Anonymous Communication</h2>
+              <p>
+                nobr offers a platform for anonymous text and video chatting. We
+                do not require users to provide personal information, nor do we
+                actively collect any identifiable data.
+              </p>
+            </li>
+            <li>
+              <h2 className="text-xl font-semibold">User Consent</h2>
+              <p>
+                By using nobr, users implicitly consent to the platform's
+                anonymous nature. Users acknowledge that any choice to disclose
+                personal information is at their own risk.
+              </p>
+            </li>
+            <li>
+              <h2 className="text-xl font-semibold">
+                User Conduct and Anonymity
+              </h2>
+              <p>
+                Users are encouraged to adhere to community guidelines and terms
+                of service, respecting others' anonymity and refraining from
+                attempting to uncover or expose fellow users' identities.
+              </p>
+            </li>
+            <li>
+              <h2 className="text-xl font-semibold">
+                Changes to Privacy Policy
+              </h2>
+              <p>
+                nobr reserves the right to update this Privacy Policy. Users are
+                encouraged to periodically review this policy for any
+                modifications.
+              </p>
+            </li>
+            <li>
+              <h2 className="text-xl font-semibold">Contact Information</h2>
+              <p>
+                For questions or concerns about this Privacy Policy or platform
+                practices, users can contact us via email at{" "}
+                <a href="mailto:teamnobr@gmail.com">email</a> and on Twitter{" "}
+                <a href="http://twitter.com/nobr_hq">@nobr_hq</a>.
+              </p>
+            </li>
+          </ol>
         </section>
         <div id="community" className="h-20 w-full"></div>
         <section>
-          <h1 className="text-2xl font-medium">Community Guidelines</h1>
-          <p>
-            Community Guidelines for &quot;NOBR&quot; 1.Respect and Kindness -
-            Treat all users with respect and kindness, regardless of their age,
-            race, gender, or ethnicity. - Avoid engaging in any form of
-            discriminatory or offensive behavior 2.Anonymity Etiquette - Embrace
-            the anonymity feature responsibly and respect the choice of others
-            to remain anonymous. - Do not attempt to uncover or expose the
-            identities of other users against their wishes. 3.Responsible
-            Sharing - Share thoughts, ideas, and content responsibly, keeping in
-            mind the potential impact on others. - Refrain from spreading false
-            information or engaging in harmful rumors. 4.Zero Tolerance for
-            Harassment - Harassment, cyberbullying, or any form of malicious
-            intent towards others is strictly prohibited and would lead to been
-            banned suspended and eventually terminated. - Report any instances
-            of harassment to the platform administrators. 5.Respect Copyright
-            and Privacy - Always respect copyright and privacy laws when sharing
-            content or information. - Do not share any personal or private
-            information of others without their consent. 6.Content Moderation -
-            Users are encouraged to report any content that violates the
-            guidelines. 7.Support and Reporting - If you encounter inappropriate
-            or harmful behavior, report it - Provide support to fellow users and
-            help maintain a positive community atmosphere. 8.Compliance with
-            Terms of Service - Familiarize yourself with and adhere to the
-            &quot;nobr&quot; Terms of Service at all times. 9.Legal Consequences
-            - Understand that illegal activities are not tolerated on the
-            platform and may result in legal actions. - Any criminal activities
-            will be reported to the relevant authorities. 10.Participation is
-            Voluntary - Users have the freedom to participate in conversations
-            and activities on &quot;nobr.&quot; - If a conversation makes you
-            uncomfortable, you can disengage or report it. These community
-            guidelines are meant to create a respectful, safe, and inclusive
-            environment for all users of &quot;nobr.&quot; Users are expected to
-            abide by these guidelines and report any violations to ensure the
-            well-being of the community.
-          </p>
+          <h1 className="text-3xl font-bold pb-4">Community Guidelines</h1>
+          <ol className="space-y-4">
+            <li>
+              <h2 className="text-xl font-semibold">Respect and Kindness</h2>
+              <ul>
+                <li>
+                  Treat all users with respect, irrespective of age, race,
+                  gender, or ethnicity.
+                </li>
+                <li>
+                  Avoid engaging in any discriminatory or offensive behavior.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h2 className="text-xl font-semibold">Anonymity Etiquette</h2>
+              <ul>
+                <li>
+                  Embrace anonymity responsibly; respect others' choice to
+                  remain anonymous.
+                </li>
+                <li>
+                  Do not attempt to expose or uncover the identities of users
+                  against their wishes.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h2 className="text-xl font-semibold">Responsible Sharing</h2>
+              <ul>
+                <li>
+                  Share thoughts and content responsibly, considering the impact
+                  on others.
+                </li>
+                <li>
+                  Refrain from spreading false information or harmful rumors.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h2 className="text-xl font-semibold">
+                Zero Tolerance for Harassment
+              </h2>
+              <ul>
+                <li>
+                  Harassment, cyberbullying, or any malicious intent towards
+                  others is strictly prohibited and will result in suspension or
+                  termination.
+                </li>
+                <li>
+                  Report any instances of harassment to platform administrators.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h2 className="text-xl font-semibold">
+                Respect Copyright and Privacy
+              </h2>
+              <ul>
+                <li>
+                  Always respect copyright and privacy laws when sharing content
+                  or information.
+                </li>
+                <li>
+                  Do not share personal or private information of others without
+                  their consent.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h2 className="text-xl font-semibold">Content Moderation</h2>
+              <ul>
+                <li>Report any content that violates the guidelines.</li>
+              </ul>
+            </li>
+            <li>
+              <h2 className="text-xl font-semibold">Support and Reporting</h2>
+              <ul>
+                <li>Report inappropriate or harmful behavior.</li>
+                <li>
+                  Provide support to fellow users and help maintain a positive
+                  community atmosphere.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h2 className="text-xl font-semibold">
+                Compliance with Terms of Service
+              </h2>
+              <ul>
+                <li>
+                  Familiarize yourself with and adhere to the nobr, Terms of
+                  Service at all times.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h2 className="text-xl font-semibold">Legal Consequences</h2>
+              <ul>
+                <li>
+                  Illegal activities are not tolerated and may result in legal
+                  actions.
+                </li>
+                <li>
+                  Any criminal activities will be reported to relevant
+                  authorities.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h2 className="text-xl font-semibold">Voluntary Participation</h2>
+              <ul>
+                <li>
+                  Users have the freedom to participate; if uncomfortable,
+                  disengage or report.
+                </li>
+              </ul>
+            </li>
+            <li>
+              These community guidelines aim to create a respectful, safe, and
+              inclusive environment for all nobr users. Adherence to these
+              guidelines and reporting violations is crucial for the community's
+              well-being.
+            </li>
+          </ol>
         </section>
       </main>
     </>
