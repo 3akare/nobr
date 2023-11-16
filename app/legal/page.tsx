@@ -46,7 +46,7 @@ const page = () => {
               <h2 className="text-xl font-semibold">Anonymity</h2>
               <p>
                 While nobr offers anonymity, users disclose their identity at
-                their own risk; nobr isn't liable for consequences.
+                their own risk; nobr isn&apos;t liable for consequences.
               </p>
             </li>
             <li>
@@ -112,7 +112,7 @@ const page = () => {
             <li>
               <h2 className="text-xl font-semibold">Limitation of Liability</h2>
               <p>
-                nobr isn't liable for damages, scams, or adverse events during
+                nobr isn&apos;t liable for damages, scams, or adverse events during
                 platform use.
               </p>
             </li>
@@ -153,7 +153,7 @@ const page = () => {
             <li>
               <h2 className="text-xl font-semibold">User Consent</h2>
               <p>
-                By using nobr, users implicitly consent to the platform's
+                By using nobr, users implicitly consent to the platform&apos;s
                 anonymous nature. Users acknowledge that any choice to disclose
                 personal information is at their own risk.
               </p>
@@ -164,8 +164,8 @@ const page = () => {
               </h2>
               <p>
                 Users are encouraged to adhere to community guidelines and terms
-                of service, respecting others' anonymity and refraining from
-                attempting to uncover or expose fellow users' identities.
+                of service, respecting others&apos; anonymity and refraining from
+                attempting to uncover or expose fellow users&apos; identities.
               </p>
             </li>
             <li>
@@ -209,7 +209,7 @@ const page = () => {
               <h2 className="text-xl font-semibold">Anonymity Etiquette</h2>
               <ul>
                 <li>
-                  Embrace anonymity responsibly; respect others' choice to
+                  Embrace anonymity responsibly; respect others&apos; choice to
                   remain anonymous.
                 </li>
                 <li>
@@ -312,7 +312,7 @@ const page = () => {
             <li>
               These community guidelines aim to create a respectful, safe, and
               inclusive environment for all nobr users. Adherence to these
-              guidelines and reporting violations is crucial for the community's
+              guidelines and reporting violations is crucial for the community&apos;s
               well-being.
             </li>
           </ol>
