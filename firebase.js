@@ -19,7 +19,8 @@ export const app =
   getApps.length === 0 ? initializeApp(firebaseConfig) : getApp;
 
 //Create Firestore instance
-const database = getFirestore();
+export const database = getFirestore();
 
 //Create Collection Reference
-export const collectionRef = collection(database, "users-email");
+export const EmailCollectionRef = collection(database, "users-email");
+export const UsersCollectionRef = collection(database, "users");

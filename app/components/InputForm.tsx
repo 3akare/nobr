@@ -19,7 +19,7 @@ import { toast } from "@/app/components/ui/use-toast";
 
 //Firebase imports
 import { addDoc } from "firebase/firestore";
-import { collectionRef } from "../../firebase";
+import { EmailCollectionRef } from "../../firebase";
 
 const FormSchema = z.object({
   username: z.string().min(4, {
@@ -39,7 +39,7 @@ export function InputForm() {
 
   async function onSubmit(data: z.infer<typeof FormSchema>) {
     try {
-      const docRef = await addDoc(collectionRef, { ...data });
+      const docRef = await addDoc(EmailCollectionRef, { ...data });
       if (docRef) {
         toast({
           title: "Contact Saved!",
