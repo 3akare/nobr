@@ -21,7 +21,7 @@ const InputBar = () => {
         <label htmlFor="messages" className="sr-only">
           Enter your messages
         </label>
-        <div className="w-full max-w-2xl text-base h-14 min-h-12 relative border border-muted-foreground dark:border-muted rounded-xl flex p-1">
+        <div className="w-full max-w-2xl text-base h-14 min-h-12 relative border border-muted rounded-xl flex p-1 shadow-sm">
           <Input
             id="messages"
             placeholder="Message..."
