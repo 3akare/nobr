@@ -23,7 +23,7 @@ const HeroComponent = () => {
           world
         </h2>
         <div className="flex gap-4">
-          <Link href={"/chat/ss"} prefetch={false}>
+          <Link href={"/chat"} prefetch={false}>
             <Button
               className="w-36 sm:w-48 h-14 rounded-xl text-lg ring-2 ring-primary hover:ring-primary/90 shadow-md
           "
@@ -31,7 +31,7 @@ const HeroComponent = () => {
               Chat
             </Button>
           </Link>
-          <Link href={"/chat/ss"} prefetch={false}>
+          <Link href={"/video"} prefetch={false}>
             <Button className="w-36 sm:w-48 h-14 rounded-xl text-lg ring-2 ring-pOrange bg-transparent text-pOrange hover:bg-pOrange hover:text-white shadow-md">
               Video
             </Button>
