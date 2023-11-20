@@ -29,7 +29,7 @@ const page = () => {
                 <li>
                   <h3 className="font-medium">Respect and Civility</h3>
                   <p>
-                    Users must engages respectfully, refraining from abusive
+                    Users must engage respectfully, refraining from abusive
                     behavior.
                   </p>
                 </li>
@@ -45,8 +45,8 @@ const page = () => {
             <li>
               <h2 className="text-xl font-semibold">Anonymity</h2>
               <p>
-                While nobr offers anonymity, users disclose their identity at
-                their own risk; nobr isn&apos;t liable for consequences.
+                While nobr offers anonymity, users can disclose their identity
+                at their own risk; nobr isn&apos;t liable for consequences.
               </p>
             </li>
             <li>
@@ -112,8 +112,8 @@ const page = () => {
             <li>
               <h2 className="text-xl font-semibold">Limitation of Liability</h2>
               <p>
-                nobr isn&apos;t liable for damages, scams, or adverse events during
-                platform use.
+                nobr isn&apos;t liable for damages, scams, or adverse events
+                during platform use.
               </p>
             </li>
             <li>
@@ -124,7 +124,7 @@ const page = () => {
               <h2 className="text-xl font-semibold">Contact Us</h2>
               <p>
                 For questions or concerns, reach out to us at{" "}
-                <a href="mailto:teamnobr@gmail.com">nobr email</a>.
+                <a href="mailto:teamnobr@gmail.com">teamnobr@gmail.com</a>.
               </p>
             </li>
           </ol>
@@ -164,8 +164,9 @@ const page = () => {
               </h2>
               <p>
                 Users are encouraged to adhere to community guidelines and terms
-                of service, respecting others&apos; anonymity and refraining from
-                attempting to uncover or expose fellow users&apos; identities.
+                of service, respecting others&apos; anonymity and refraining
+                from attempting to uncover or expose fellow users&apos;
+                identities.
               </p>
             </li>
             <li>
@@ -183,8 +184,8 @@ const page = () => {
               <p>
                 For questions or concerns about this Privacy Policy or platform
                 practices, users can contact us via email at{" "}
-                <a href="mailto:teamnobr@gmail.com">email</a> and on Twitter{" "}
-                <a href="http://twitter.com/nobr_hq">@nobr_hq</a>.
+                <a href="mailto:teamnobr@gmail.com">teamnobr@gmail.com</a> and
+                on Twitter <a href="http://twitter.com/nobr_hq">@nobr_hq</a>.
               </p>
             </li>
           </ol>
@@ -312,8 +313,8 @@ const page = () => {
             <li>
               These community guidelines aim to create a respectful, safe, and
               inclusive environment for all nobr users. Adherence to these
-              guidelines and reporting violations is crucial for the community&apos;s
-              well-being.
+              guidelines and reporting violations is crucial for the
+              community&apos;s well-being.
             </li>
           </ol>
         </section>
