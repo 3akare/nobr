@@ -24,27 +24,7 @@ const ChatBody = () => {
     setup();
   }, []);
 
-  const messages = [
-    true,
-    false,
-    true,
-    false,
-    true,
-    false,
-    true,
-    false,
-    true,
-    false,
-
-    true,
-    false,
-
-    true,
-    false,
-
-    true,
-    false,
-  ];
+  const messages = [true, false];
   return (
     <main className="container mx-auto flex items-center flex-col justify-end p-4">
       <section className="flex text-ellipsis self-start justify-self-start w-full h-full gap-3 flex-col">
