@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { UsersCollectionRef } from "@/firebase";
-import { addDoc, collection, serverTimestamp } from "firebase/firestore";
+import { addDoc, serverTimestamp } from "firebase/firestore";
 import { useRouter } from "next/navigation";
 
 function useUserSetup() {
@@ -22,16 +22,8 @@ function useUserSetup() {
         if (newUserDocRef) {
           localStorage.setItem("userChatID", newUserDocRef.id);
 
-          const userMessageRef = collection(newUserDocRef, "messages");
-          await addDoc(userMessageRef, {
-            messages: {
-              text: `Message from ${newUserDocRef.id}`,
-              timestamp: serverTimestamp(),
-            },
-          });
-
           // Once setup is completed, redirect to the "/chat/${chatID}" route
-          router.replace(`/chat/${userChatID}`);
+          router.replace(`/chat/${newUserDocRef.id}`);
 
           return {
             id: newUserDocRef.id,
@@ -43,6 +35,7 @@ function useUserSetup() {
       } else {
         // If userChatID exists, you can perform additional actions or updates here
         // For simplicity, let's assume no additional updates needed
+        setDisplayMsg("Logging you in...");
         router.replace(`/chat/${userChatID}`);
       }
     }

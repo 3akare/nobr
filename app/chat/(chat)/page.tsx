@@ -7,7 +7,7 @@ const Page = () => {
   const setupStatusMessage = useUserSetup();
   return (
     <main className="h-[calc(100vh-228px)] flex items-center justify-center flex-col gap-2">
-      <Image src={loading} alt="loading" width={50} height={50} />
+      <Image src={loading} alt="loading" width={50} height={50} priority />
       <p>{setupStatusMessage}</p>
     </main>
   );
