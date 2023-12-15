@@ -1,21 +1,26 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
-import { getStorage } from "firebase/storage";
+import { initializeApp, getApp, getApps } from "firebase/app";
+import { collection, getFirestore } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDUnCOpA5BRp34k6rM7zpAloJyRmfFYXP4",
-  authDomain: "nobr-9f674.firebaseapp.com",
-  projectId: "nobr-9f674",
-  storageBucket: "nobr-9f674.appspot.com",
-  messagingSenderId: "1011287997099",
-  appId: "1:1011287997099:web:270c3ebff5e809e8d515ee",
+  apiKey: "AIzaSyBjbIga8Tac4Jhq6r9r4TKlblJeuY3ZdgI",
+  authDomain: "nobr-52208.firebaseapp.com",
+  projectId: "nobr-52208",
+  storageBucket: "nobr-52208.appspot.com",
+  messagingSenderId: "917229872453",
+  appId: "1:917229872453:web:82852695c85b28f7164a2c",
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
+//Initialize App
+export const app =
+  getApps.length === 0 ? initializeApp(firebaseConfig) : getApp;
+
+//Create Firestore instance
 export const database = getFirestore(app);
-export const storage = getStorage(app);
+
+//Create Collection Reference
+export const EmailCollectionRef = collection(database, "users-email");
+export const UsersCollectionRef = collection(database, "users");
