@@ -6,6 +6,7 @@
 .pnp.js
 .yarn/install-state.gz
 
+firebase.js
 # testing
 /coverage
 
@@ -39,3 +40,7 @@ next-env.d.ts
 # PWA
 /public/**.js
 /public/**.map
+.gitignore
+firebase.js
+.gitignore
+firebase.js
