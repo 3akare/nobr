@@ -24,3 +24,4 @@ export const database = getFirestore(app);
 //Create Collection Reference
 export const EmailCollectionRef = collection(database, "users-email");
 export const UsersCollectionRef = collection(database, "users");
+export const RoomsCollectionRef = collection(database, "rooms");

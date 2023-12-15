@@ -31,9 +31,9 @@ const HeroComponent = () => {
               Chat
             </Button>
           </Link>
-          <Link href={"/video"} prefetch={false}>
+          <Link href={"/room"} prefetch={false}>
             <Button className="w-36 sm:w-48 h-14 rounded-xl text-lg ring-2 ring-pOrange bg-transparent text-pOrange hover:bg-pOrange hover:text-white shadow-md">
-              Video
+              Create Room
             </Button>
           </Link>
         </div>

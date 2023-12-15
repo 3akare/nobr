@@ -1,7 +1,8 @@
 "use client";
 
+import { Button } from "@/app/components/ui/button";
 import { database } from "@/firebase";
-import { addDoc, collection } from "firebase/firestore";
+import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import Link from "next/link";
 import { usePathname, useSearchParams, useRouter } from "next/navigation";
 import { useCallback } from "react";
@@ -22,15 +23,18 @@ const CreateRoom = () => {
 
   const createRoomFunction = async () => {
     await addDoc(collection(database, "rooms"), {
-      dateCreated: Date.now(),
+      Messages: {
+        Message: "testing",
+      },
+      dateCreated: serverTimestamp(),
     }).then((value) => {
       router.push(pathname + "?" + createQueryString("roomId", value.id));
     });
   };
-  
+
   return (
     <div className="container">
-      <button onClick={() => createRoomFunction()}>Create Room</button>
+      <Button onClick={() => createRoomFunction()}>Create Room</Button>
       {roomId && roomId.length > 0 ? (
         <Link href={`/room/${roomId}`}>Room Created!. Proceed to Room.</Link>
       ) : (

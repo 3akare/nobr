@@ -1,4 +1,4 @@
-import { ChatBody } from "./components";
+import { ChatBody } from "../../components";
 
 const Page = () => {
   return <ChatBody />;
