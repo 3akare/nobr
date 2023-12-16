@@ -2,7 +2,7 @@
 
 import { Button } from "@/app/components/ui/button";
 import { database } from "@/firebase";
-import { addDoc, collection, serverTimestamp } from "firebase/firestore";
+import { addDoc, collection } from "firebase/firestore";
 import Link from "next/link";
 import { usePathname, useSearchParams, useRouter } from "next/navigation";
 import { useCallback } from "react";
@@ -25,12 +25,11 @@ const CreateRoom = () => {
   );
   // Function to create a room
   const createRoomFunction = async () => {
-    const docRef = await addDoc(collection(database, "rooms"), {
-      Messages: ["Hello world!", "testing"],
-      dateCreated: serverTimestamp(),
+    const roomRef = await addDoc(collection(database, "rooms"), {
+      dateCreated: Date.now(),
     });
     // Push the new route to the router
-    router.push(`${pathname}?${createQueryString("roomId", docRef.id)}`);
+    router.push(`${pathname}?${createQueryString("roomId", roomRef.id)}`);
   };
 
   return (

@@ -1,4 +1,3 @@
-import { it } from "node:test";
 import { InputBar, MessageBubble } from ".";
 
 // Define the type for a message
