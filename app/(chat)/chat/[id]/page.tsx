@@ -7,7 +7,14 @@ const messages = ["This", "Space", "Isn't", "ready", "yet"];
 // Define the Page component
 // It renders a ChatBody component with a messages prop
 const Page = () => {
-  return <ChatBody messages={messages} />;
+  return (
+    <ChatBody
+      messages={messages}
+      onMessageSubmit={() => {
+        console.log("Hello world");
+      }}
+    />
+  );
 };
 
 // Export the Page component as default
