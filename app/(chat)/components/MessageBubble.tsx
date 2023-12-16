@@ -16,4 +16,5 @@ const MessageBubble = React.memo(({ item }: { item: string }) => {
 });
 
 // Export the MessageBubble component as default
+MessageBubble.displayName = "MessageBubble";
 export default MessageBubble;
