@@ -7,7 +7,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 // Define the InputBar component
-const InputBar = () => {
+const InputBar = ({ onMessageSubmit }: { onMessageSubmit: Function }) => {
   // Use the useState hook to manage the message state
   const [message, setMessage] = useState("");
 
@@ -15,7 +15,7 @@ const InputBar = () => {
   // It prevents the default form submission, resets the message state, and logs the message
   function handleSubmit(event: React.FormEvent) {
     event.preventDefault();
-    console.log(message);
+    onMessageSubmit(message);
     setMessage("");
   }
 

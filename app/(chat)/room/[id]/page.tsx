@@ -10,9 +10,8 @@ import {
 } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
-import { Button } from "@/app/components/ui/button";
 
-function Room() {
+const Room = () => {
   // Get the id from the router object
   const { id } = useParams();
   const messagesRef = collection(database, `rooms/${id}/messages`);
@@ -34,21 +33,17 @@ function Room() {
     return () => unsubscribe();
   }, [id]);
 
+  const handleSendMessage = (value: string) => {
+    addDoc(messagesRef, {
+      timestamp: Date.now(),
+      messages: value,
+    });
+  };
   return (
     <div>
-      <Button
-        onClick={() =>
-          addDoc(messagesRef, {
-            timestamp: Date.now(),
-            messages: "message",
-          })
-        }
-      >
-        Click Me
-      </Button>
-      <ChatBody messages={messages} />
+      <ChatBody messages={messages} onMessageSubmit={handleSendMessage} />
     </div>
   );
-}
+};
 
 export default Room;
