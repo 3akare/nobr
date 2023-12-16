@@ -1,9 +1,7 @@
 "use client";
 
-//Components
+// Import necessary components
 import { InputForm } from ".";
-
-//shadcn UI components
 import {
   Card,
   CardContent,
@@ -12,9 +10,10 @@ import {
   CardTitle,
 } from "./ui/card";
 
+// Define the NewsletterComponent
 const NewsletterComponent = () => {
   return (
-    <Card className="container w-[90%] max-w-3xl text-center">
+    <Card className="container w-[90%] max-w-3xl text-center mx-auto">
       <CardContent className="flex flex-col items-center gap-4 px-0">
         <CardHeader className="px-0">
           <CardTitle className="text-3xl">

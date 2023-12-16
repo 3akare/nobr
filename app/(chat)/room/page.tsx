@@ -11,7 +11,10 @@ const CreateRoom = () => {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  // Get the roomId from the searchParams object
   const roomId = searchParams.get("roomId");
+
+  // Function to create a query string
   const createQueryString = useCallback(
     (name: string, value: string) => {
       const params = new URLSearchParams(searchParams);
@@ -20,27 +23,26 @@ const CreateRoom = () => {
     },
     [searchParams]
   );
-
+  // Function to create a room
   const createRoomFunction = async () => {
-    await addDoc(collection(database, "rooms"), {
-      Messages: {
-        Message: "testing",
-      },
+    const docRef = await addDoc(collection(database, "rooms"), {
+      Messages: ["Hello world!", "testing"],
       dateCreated: serverTimestamp(),
-    }).then((value) => {
-      router.push(pathname + "?" + createQueryString("roomId", value.id));
     });
+    // Push the new route to the router
+    router.push(`${pathname}?${createQueryString("roomId", docRef.id)}`);
   };
 
   return (
-    <div className="container">
+    <main className="h-[calc(100vh-228px)] flex items-center justify-center flex-col gap-2">
       <Button onClick={() => createRoomFunction()}>Create Room</Button>
+
       {roomId && roomId.length > 0 ? (
         <Link href={`/room/${roomId}`}>Room Created!. Proceed to Room.</Link>
       ) : (
         <></>
       )}
-    </div>
+    </main>
   );
 };
 
