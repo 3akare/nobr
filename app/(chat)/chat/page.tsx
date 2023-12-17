@@ -29,7 +29,7 @@ const CardTextContent: Array<{
 const Page = () => {
   // Render a main element with a loading message
   return (
-    <main className="h-[calc(100vh-220px)] flex items-center justify-end flex-col lg:flex-row lg:justify-center gap-8">
+    <main className="min-h-[calc(100vh-224px)] flex items-center justify-center flex-col lg:flex-row lg:justify-center gap-8">
       {CardTextContent.map((item, index) => (
         <ChatCard
           key={index}
