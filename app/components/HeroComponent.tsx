@@ -25,15 +25,15 @@ const HeroComponent = () => {
         <div className="flex gap-4">
           <Link href={"/chat"} prefetch={false}>
             <Button
-              className="w-36 sm:w-48 h-14 rounded-xl text-lg ring-2 ring-primary hover:ring-primary/90 shadow-md
+              className="w-36 sm:w-48 h-14 text-lg ring-2 ring-primary hover:ring-primary/90 shadow-md
           "
             >
               Chat
             </Button>
           </Link>
-          <Link href={"/room"} prefetch={false}>
-            <Button className="w-36 sm:w-48 h-14 rounded-xl text-lg ring-2 ring-pOrange bg-transparent text-pOrange hover:bg-pOrange hover:text-white shadow-md">
-              Create Room
+          <Link href={"/video"} prefetch={false}>
+            <Button className="w-36 sm:w-48 h-14 text-lg ring-2 ring-pOrange bg-transparent text-pOrange hover:bg-pOrange hover:text-white shadow-md">
+              Video
             </Button>
           </Link>
         </div>

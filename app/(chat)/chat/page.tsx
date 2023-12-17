@@ -1,24 +1,39 @@
-"use client";
 // Import necessary modules
-import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+import * as React from "react";
+import { ChatCard } from "@/app/(chat)/components/index";
+
+// Define the content for the chat cards
+const CardTextContent: Array<{ title: string; description: string; link: string; buttonText: string; }> = [
+  {
+    title: "Individual Chat",
+    description:
+      "Engage in one-on-one conversations with random strangers, all while maintaining your anonymity.",
+    link: "/chat/asdsd",
+    buttonText: "Chat",
+  },
+  {
+    title: "Group Chat",
+    description:
+      "Engage in Group conversations with random strangers, all while maintaining your anonymity.",
+    link: "/room",
+    buttonText: "Create Room",
+  },
+];
 
 // Define the Page component
 const Page = () => {
-  // Use the useRouter hook to get the router object
-  const router = useRouter();
-
-  // Use the useEffect hook to replace the current route with "/chat/asdsd" when the component mounts
-  useEffect(() => {
-    router.replace("/chat/asdsd");
-  }, [router]); // Add router to the dependency array to prevent unnecessary re-renders
-
   // Render a main element with a loading message
   return (
-    <main className="h-[calc(100vh-228px)] flex items-center justify-center flex-col gap-2">
-      {/* Uncomment the following lines when the loading image and setupStatusMessage are available */}
-      {/* <Image src={loading} alt="loading" width={50} height={50} priority /> */}
-      {/* <p>{setupStatusMessage}</p> */}
+    <main className="h-[calc(100vh-220px)] flex items-center justify-end flex-col lg:flex-row lg:justify-center gap-8">
+      {CardTextContent.map((item, index) => (
+        <ChatCard
+          key={index}
+          title={item.title}
+          description={item.description}
+          link={item.link}
+          buttonText={item.buttonText}
+        />
+      ))}
     </main>
   );
 };
