@@ -3,7 +3,12 @@ import * as React from "react";
 import { ChatCard } from "@/app/(chat)/components/index";
 
 // Define the content for the chat cards
-const CardTextContent: Array<{ title: string; description: string; link: string; buttonText: string; }> = [
+const CardTextContent: Array<{
+  title: string;
+  description: string;
+  link: string;
+  buttonText: string;
+}> = [
   {
     title: "Individual Chat",
     description:
