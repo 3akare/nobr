@@ -21,7 +21,7 @@ const CardTextContent: Array<{
     description:
       "Engage in Group conversations with random strangers, all while maintaining your anonymity.",
     link: "/room",
-    buttonText: "Create Room",
+    buttonText: "Group",
   },
 ];
 
@@ -29,7 +29,7 @@ const CardTextContent: Array<{
 const Page = () => {
   // Render a main element with a loading message
   return (
-    <main className="min-h-[calc(100vh-224px)] flex items-center justify-center flex-col lg:flex-row lg:justify-center gap-8">
+    <main className="min-h-[calc(100vh-224px)] md:min-h-[calc(100vh-192px)] flex items-center justify-center flex-col lg:flex-row lg:justify-center gap-8">
       {CardTextContent.map((item, index) => (
         <ChatCard
           key={index}
