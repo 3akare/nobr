@@ -8,6 +8,7 @@ import { MenuBar, ModeToggle } from ".";
 //images
 import light from "@logos/light-nobr-logo.svg";
 import dark from "@logos/dark-nobr-logo.svg";
+import ClipBoard from "../(chat)/room/componets/ClipBoard";
 
 // Define the NavigationBar component
 // It takes a prop named visibleMenu of type boolean
@@ -39,6 +40,7 @@ const NavigationBar = ({ visibleMenu }: { visibleMenu: boolean }) => {
             />
           </Link>
         </div>
+        <ClipBoard></ClipBoard>
         <div>
           {/* Render the ModeToggle component */}
           <ModeToggle variant={"ghost"} classname="focus-visible:hidden" />

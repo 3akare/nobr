@@ -1,3 +1,4 @@
+// Import necessary modules and components
 "use client";
 import { ChatBody } from "@/app/(chat)/components";
 import { database } from "@/firebase";
@@ -11,48 +12,54 @@ import {
 import { useEffect, useState, useCallback } from "react";
 import { useParams } from "next/navigation";
 
+// Define a type for the messages
+type Message = {
+  timestamp: number;
+  message: string;
+};
+
 const Room = () => {
   // Get the id from the router object
   const { id } = useParams();
   // Initialize messages state with a specific type
-  const [messages, setMessages] = useState<any[]>([]);
+  const [messages, setMessages] = useState<Message[]>([]);
 
-  // Define a function to handle sending messages
-  const handleSendMessage = useCallback((value: string) => {
-    const messagesRef = collection(database, `rooms/${id}/messages`);
-    addDoc(messagesRef, {
-      timestamp: Date.now(),
-      messages: value,
-    });
-  }, [id]);
-
-  useEffect(() => {
-    // Create a reference to the messages collection in Firestore
-    const messagesRef = collection(database, `rooms/${id}/messages`);
-    // Create a query to get messages ordered by timestamp
-    const q = query(messagesRef, orderBy("timestamp", "asc"));
-    // Set up a listener for changes in the Firestore collection
-    const unsubscribe = onSnapshot(q, (snapshot) => {
-      // Create an array to hold the new messages
-      let newMessages: any = [];
-      snapshot.forEach((doc) => {
-        // Ensure the data is an object before setting it to state
-        if (typeof doc.data() === "object" && doc.data() !== null) {
-          newMessages.push(doc.data());
-        }
+  // Function to handle sending of messages
+  const handleSendMessage = useCallback(
+    (value: string) => {
+      // Reference to the messages collection in the database
+      const messagesRef = collection(database, `rooms/${id}/messages`);
+      // Add a new document to the collection with the current timestamp and message
+      addDoc(messagesRef, {
+        timestamp: Date.now(),
+        messages: value,
       });
-      // Update the messages state with the new messages
-      setMessages(newMessages);
-    });
-    // Clean up the onSnapshot listener when the component unmounts
+    },
+    [id] // Recreate the function whenever the id changes
+  );
+
+  // Effect to fetch messages from the database
+  useEffect(() => {
+    // Reference to the messages collection in the database
+    const messagesRef = collection(database, `rooms/${id}/messages`);
+    // Subscribe to the collection and update the state whenever it changes
+    const unsubscribe = onSnapshot(
+      query(messagesRef, orderBy("timestamp", "asc")),
+      (snapshot) => {
+        // Map the snapshot documents to the Message type and update the state
+        const newMessages = snapshot.docs.map((doc) => doc.data() as Message);
+        setMessages(newMessages);
+      }
+    );
+    // Unsubscribe from the collection when the component unmounts or the id changes
     return () => unsubscribe();
   }, [id]); // Run the effect when the id changes
 
+  // Render the chat body with the messages and the send message function
   return (
-    <div>
-      {/* Render the ChatBody component with the messages and the handleSendMessage function */}
+    <main>
       <ChatBody messages={messages} onMessageSubmit={handleSendMessage} />
-    </div>
+    </main>
   );
 };
 
