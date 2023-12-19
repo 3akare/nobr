@@ -1,14 +1,14 @@
+"use client";
+
 // Import necessary modules
 import * as React from "react";
 import { ChatCard } from "@/app/(chat)/components/index";
+import { addDoc, collection, serverTimestamp } from "firebase/firestore";
+import { database } from "@/firebase";
+import { useUserSetup } from "@/lib/zustand";
 
 // Define the content for the chat cards
-const CardTextContent: Array<{
-  title: string;
-  description: string;
-  link: string;
-  buttonText: string;
-}> = [
+const CardTextContent = [
   {
     title: "Individual Chat",
     description:

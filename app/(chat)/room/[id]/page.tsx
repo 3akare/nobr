@@ -8,14 +8,17 @@ import {
   orderBy,
   collection,
   addDoc,
+  serverTimestamp,
 } from "firebase/firestore";
 import { useEffect, useState, useCallback } from "react";
 import { useParams } from "next/navigation";
+import { useUserSetup } from "@/lib/zustand";
 
 // Define a type for the messages
 type Message = {
   timestamp: number;
   message: string;
+  userID: string;
 };
 
 const Room = () => {
@@ -24,19 +27,39 @@ const Room = () => {
   // Initialize messages state with a specific type
   const [messages, setMessages] = useState<Message[]>([]);
 
+  // Get the user from the Zustand store
+  const user: any = useUserSetup();
+
   // Function to handle sending of messages
+  // This function is memoized with useCallback to prevent unnecessary re-renders
   const handleSendMessage = useCallback(
     (value: string) => {
       // Reference to the messages collection in the database
       const messagesRef = collection(database, `rooms/${id}/messages`);
-      // Add a new document to the collection with the current timestamp and message
+      // Add a new document to the collection with the current timestamp, message, and user ID
       addDoc(messagesRef, {
         timestamp: Date.now(),
         messages: value,
+        userID: user.userID,
       });
     },
-    [id] // Recreate the function whenever the id changes
+    [id, user.userID] // Recreate the function whenever the id or user.userID changes
   );
+
+  // Function to create a new user if userID is null
+  const createUserFunction = async (user: any) => {
+    if (user.userID === null) {
+      const newUser = await addDoc(collection(database, "users"), {
+        timeStamp: serverTimestamp(),
+      });
+      user.setUserID(newUser.id);
+    }
+  };
+
+  // On component mount, check if user exists or needs to be created
+  useEffect(() => {
+    createUserFunction(user);
+  }, [user]);
 
   // Effect to fetch messages from the database
   useEffect(() => {
