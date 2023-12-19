@@ -33,7 +33,8 @@ const InputBar = ({ onMessageSubmit }: { onMessageSubmit: Function }) => {
           <Input
             id="messages"
             placeholder="Message..."
-            autoComplete="off"
+            type="text"
+            // autoComplete="off"
             value={message}
             onChange={(event) => setMessage(event.target.value)}
             className="text-base w-[83%] sm:w-[90%] md:w-[99%] indent-2 h-full border-none hover:ring-0 focus-visible:ring-0 focus-within:ring-0 ring-0 ring-offset-0 focus:ring-0 focus-visible:ring-offset-0"

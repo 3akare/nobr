@@ -17,7 +17,7 @@ const MessageBubble = React.memo(({ item }: { item: Item }) => {
     hour12: true,
   });
   return (
-    <p className="p-2 px-4 w-auto rounded-xl self-end bg-pOrange dark:text-background max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-3xl font-medium overflow-wrap break-word word-wrap break-word word-break break-all">
+    <p className="p-2 px-4 w-auto rounded-xl self-end bg-pOrange dark:text-background max-w-[80%] font-medium overflow-wrap break-word word-wrap break-word word-break break-all">
       {messages.toString()}
       <small className="block self-end p-1 text-right text-[0.7rem]">
         <time>{`${time}`}</time>

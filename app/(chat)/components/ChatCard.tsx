@@ -48,7 +48,7 @@ const ChatCard: React.FC<ChatCardProps> = ({
         ) : (
           <div className="flex gap-4">
             <CreateGroupChatDialog />
-            <JoinGroupChatDialog />
+            {/* <JoinGroupChatDialog /> */}
           </div>
         )}
       </CardFooter>

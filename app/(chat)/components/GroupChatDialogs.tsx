@@ -54,23 +54,23 @@ export const CreateGroupChatDialog = () => {
     switch (status) {
       case "idle":
         return (
-          <Button onClick={createRoomFunction} className="text-md w-full">
+          <Button onClick={createRoomFunction} className="text-md">
             Create
           </Button>
         );
       case "loading":
         return (
-          <div className="inline-flex items-center justify-center w-full">
+          <div className="inline-flex items-center justify-center">
             <Image src={Loading} alt="Loading" className="w-10 h-10" />
           </div>
         );
       case "done":
         return roomId && roomId.length > 0 ? (
           <Link
-            className="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 text-md w-full"
+            className="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 text-md"
             href={`/room/${roomId}`}
           >
-            Proceed to Room.
+            Proceed to Room
           </Link>
         ) : null;
       default:
@@ -90,7 +90,9 @@ export const CreateGroupChatDialog = () => {
             Click on the button below to create a anonymous group
           </DialogDescription>
         </DialogHeader>
-        <DialogFooter>{renderButtonContent()}</DialogFooter>
+        <DialogFooter className="sm:justify-center">
+          {renderButtonContent()}
+        </DialogFooter>
       </DialogContent>
     </Dialog>
   );
