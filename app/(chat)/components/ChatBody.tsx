@@ -1,4 +1,5 @@
 import { InputBar, MessageBubble } from ".";
+import ScrollDiv from "./ScrollDiv";
 
 // Define the type for a message
 type Message = {
@@ -21,7 +22,7 @@ const ChatBody = ({ messages, onMessageSubmit }: Message) => {
           messages.map((item: any, index: number) => (
             <MessageBubble item={item} key={index} />
           ))}
-        <div className="h-24 w-full"></div>
+        <ScrollDiv messages={messages} />
       </section>
       {/* Render the InputBar component */}
       <InputBar onMessageSubmit={onMessageSubmit} />
