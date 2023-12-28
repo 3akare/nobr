@@ -9,9 +9,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/app/components/ui/dialog";
-import { Input } from "@/app/components/ui/input";
 import { database } from "@/firebase";
-import { Label } from "@radix-ui/react-label";
 import { addDoc, collection } from "firebase/firestore";
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
@@ -68,7 +66,7 @@ export const CreateGroupChatDialog = () => {
         return roomId && roomId.length > 0 ? (
           <Link
             className="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 text-md"
-            href={`/room/${roomId}`}
+            href={`/create/room/${roomId}`}
           >
             Proceed to Room
           </Link>
@@ -92,34 +90,6 @@ export const CreateGroupChatDialog = () => {
         </DialogHeader>
         <DialogFooter className="sm:justify-center">
           {renderButtonContent()}
-        </DialogFooter>
-      </DialogContent>
-    </Dialog>
-  );
-};
-
-export const JoinGroupChatDialog = () => {
-  return (
-    <Dialog>
-      <DialogTrigger className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary-foreground h-10 px-4 py-2 bg-pOrange hover:bg-background hover:text-pOrange hover:outline">
-        Join Group
-      </DialogTrigger>
-      <DialogContent className="w-[90%] rounded-lg">
-        <DialogHeader className="items-center">
-          <DialogTitle className="text-2xl">Join Group</DialogTitle>
-          <DialogDescription className="text-md">
-            Enter the generated room id
-          </DialogDescription>
-        </DialogHeader>
-        <DialogFooter className="flex flex-row gap-2">
-          <Label htmlFor="roomID" className="sr-only"></Label>
-          <Input
-            type="text"
-            id="roomID"
-            className="focus-visible:ring-0 focus-visible:ring-offset-0 text-base"
-            autoComplete="on"
-          ></Input>
-          <Button className="text-md">Join</Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>

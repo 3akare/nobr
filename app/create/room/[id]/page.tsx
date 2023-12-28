@@ -1,6 +1,6 @@
 // Import necessary modules and components
 "use client";
-import { ChatBody } from "@/app/(chat)/components";
+import { ChatBody } from "@/app/create/ChatComponents";
 import { database } from "@/firebase";
 import {
   onSnapshot,

@@ -1,11 +1,6 @@
-"use client";
-
 // Import necessary modules
 import * as React from "react";
-import { ChatCard } from "@/app/(chat)/components/index";
-import { addDoc, collection, serverTimestamp } from "firebase/firestore";
-import { database } from "@/firebase";
-import { useUserSetup } from "@/lib/zustand";
+import { ChatCard } from "@/app/create/ChatComponents/index";
 
 // Define the content for the chat cards
 const CardTextContent = [
@@ -13,14 +8,14 @@ const CardTextContent = [
     title: "Individual Chat",
     description:
       "Engage in one-on-one conversations with random strangers, all while maintaining your anonymity.",
-    link: "/chat/asdsd",
+    link: "/create//chat/asdsd",
     buttonText: "Chat",
   },
   {
     title: "Group Chat",
     description:
       "Engage in Group conversations with random strangers, all while maintaining your anonymity.",
-    link: "/room",
+    link: "/create/room",
     buttonText: "Group",
   },
 ];

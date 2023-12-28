@@ -1,6 +1,6 @@
 "use client";
 // Import necessary components
-import { ChatBody } from "../../components";
+import { ChatBody } from "../../ChatComponents";
 
 // Define a constant array for messages
 const messages = [
@@ -19,6 +19,5 @@ const handleSubmit = (value: string) => {
 const Page = () => {
   return <ChatBody messages={messages} onMessageSubmit={handleSubmit} />;
 };
-
 // Export the Page component as default
 export default Page;

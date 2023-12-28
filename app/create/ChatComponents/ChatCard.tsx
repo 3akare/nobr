@@ -9,7 +9,7 @@ import {
 } from "@/app/components/ui/card";
 import Link from "next/link";
 import { Button } from "@/app/components/ui/button";
-import { CreateGroupChatDialog, JoinGroupChatDialog } from "./GroupChatDialogs";
+import { CreateGroupChatDialog } from "./GroupChatDialogs";
 
 // Define the props for the ChatCard component
 interface ChatCardProps {
@@ -20,12 +20,7 @@ interface ChatCardProps {
 }
 
 // Define the ChatCard component
-const ChatCard: React.FC<ChatCardProps> = ({
-  title,
-  description,
-  buttonText,
-  link,
-}) => {
+const ChatCard: React.FC<ChatCardProps> = ({ title, description }) => {
   // Render a Card component with a header, content, and footer
   return (
     <Card className="w-[350px] shadow-sm min-h-[16rem]">
@@ -48,7 +43,6 @@ const ChatCard: React.FC<ChatCardProps> = ({
         ) : (
           <div className="flex gap-4">
             <CreateGroupChatDialog />
-            {/* <JoinGroupChatDialog /> */}
           </div>
         )}
       </CardFooter>

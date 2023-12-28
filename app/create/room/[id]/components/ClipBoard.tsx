@@ -2,8 +2,8 @@
 import { Button } from "@/app/components/ui/button";
 import { toast } from "@/app/components/ui/use-toast";
 import Image from "next/image";
-import clipboardWhite from "@/app/(chat)/room/[id]/public/clipboard-white.svg";
-import clipboardBlack from "@/app/(chat)/room/[id]/public/clipboard-dark.svg";
+import clipboardWhite from "@/app/create/room/[id]/public/images/clipboard-white.svg";
+import clipboardBlack from "@/app/create/room/[id]/public/images/clipboard-dark.svg";
 import { usePathname } from "next/navigation";
 import {
   Tooltip,

@@ -1,5 +1,4 @@
-import { InputBar, MessageBubble } from ".";
-import ScrollDiv from "./ScrollDiv";
+import { InputBar, MessageBubble, ScrollDiv } from ".";
 
 // Define the type for a message
 type Message = {
