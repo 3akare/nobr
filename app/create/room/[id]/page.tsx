@@ -21,7 +21,7 @@ type Message = {
   userID: string;
 };
 
-const page = () => {
+const Room = () => {
   // Get the id from the router object
   const { id } = useParams();
   // Initialize messages state with a specific type
@@ -86,4 +86,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Room;
