@@ -32,12 +32,15 @@ const MessageBubble = React.memo(({ item }: { item: Item }) => {
   // Determine the message bubble style based on the user ID
   const bubbleStyle =
     item.userID === user.userID
-      ? "p-2 px-4 w-auto rounded-xl self-end bg-pOrange dark:text-background max-w-[80%] font-medium overflow-wrap break-word word-wrap break-word word-break break-all"
+      ? "p-2 px-4 w-auto rounded-xl self-end bg-pOrange dark:text-background max-w-[80%] font-medium overflow-wrap break-word word-wrap break-word word-break break-all text-pretty"
       : "p-2 px-4 w-auto rounded-xl self-start bg-muted dark:text-foreground max-w-[80%] font-medium overflow-wrap break-word word-wrap break-word word-break break-all";
 
   // Render the message bubble
   return (
     <p className={bubbleStyle}>
+      <div className="font-bold text-xs">
+        {`stranger-` + `${user.userID}`.slice(-7)}
+      </div>
       {messages.toString()}
       <small className="block self-end p-1 text-right text-[0.7rem]">
         <time>{`${time}`}</time>
