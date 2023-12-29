@@ -24,7 +24,9 @@ const ClipBoard = () => {
       duration: 500,
     });
     // Copy the current URL to the clipboard
-    navigator.clipboard.writeText(`Join my anonumous group\nhttps://nobr-delta.vercel.app${pathname}`);
+    navigator.clipboard.writeText(
+      `Join my anonymous group\nhttps://nobr-delta.vercel.app${pathname}`
+    );
   };
 
   // Render the button and tooltip if the pathname starts with "/room"
