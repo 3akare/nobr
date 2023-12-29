@@ -21,7 +21,7 @@ type Message = {
   userID: string;
 };
 
-const Room = () => {
+const page = () => {
   // Get the id from the router object
   const { id } = useParams();
   // Initialize messages state with a specific type
@@ -32,7 +32,7 @@ const Room = () => {
 
   // Function to handle sending of messages
   // This function is memoized with useCallback to prevent unnecessary re-renders
-  const handleSendMessage = useCallback(
+  const handleSendMessage: any = useCallback(
     (value: string) => {
       // Reference to the messages collection in the database
       const messagesRef = collection(database, `rooms/${id}/messages`);
@@ -86,4 +86,4 @@ const Room = () => {
   );
 };
 
-export default Room;
+export default page;
