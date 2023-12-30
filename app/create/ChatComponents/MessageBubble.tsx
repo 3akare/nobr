@@ -39,7 +39,7 @@ const MessageBubble = React.memo(({ item }: { item: Item }) => {
   return (
     <p className={bubbleStyle}>
       <div className="font-bold text-xs">
-        {`stranger-` + `${user.userID}`.slice(-7)}
+        {`stranger-` + `${item.userID}`.slice(-7)}
       </div>
       {messages.toString()}
       <small className="block self-end p-1 text-right text-[0.7rem]">
